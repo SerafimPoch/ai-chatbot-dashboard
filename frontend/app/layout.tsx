@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   description: "Description of AI Chatbot Dashboard",
 };
 
+const sfProDisplay = localFont({
+  src: [
+    {
+      path: "../public/fonts/SF-Pro-Display-Bold.ttf",
+      weight: "bold",
+      style: "normal",
+    },
+  ],
+  variable: "--font-sf-pro-display",
+});
+
 const sfProRounded = localFont({
   src: [
     {
@@ -31,7 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={sfProRounded.className}>
+      <body className={`${sfProRounded.className} ${sfProDisplay.className}`}>
         <RootStyleRegistry>{children}</RootStyleRegistry>
       </body>
     </html>

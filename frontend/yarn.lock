@@ -220,6 +220,11 @@
   resolved "https://registry.yarnpkg.com/@jilio/addnew/-/addnew-1.0.6.tgz#8ec680008aa9011422c8a93dc9b4f38a5737d94f"
   integrity sha512-mGm87hQzwZSJ880VPWhq2sgmDLFsAIQ2MlQgod9gDt3PXSKTz0NG4NKO6QkjaVn6zEJacpbQ2CqyAfTo07yP3A==
 
+"@nanostores/react@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@nanostores/react/-/react-0.7.1.tgz#e0446f5cacc9fa53448c454f5d00ddb0f906a37a"
+  integrity sha512-EXQg9N4MdI4eJQz/AZLIx3hxQ6BuBmV4Q55bCd5YCSgEOAW7tGTsIZxpRXxvxLXzflNvHTBvfrDNY38TlSVBkQ==
+
 "@next/env@14.0.3":
   version "14.0.3"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-14.0.3.tgz#9a58b296e7ae04ffebce8a4e5bd0f87f71de86bd"

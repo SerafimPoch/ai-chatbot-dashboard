@@ -4,19 +4,19 @@ import { MainPage } from "@/pages/Main";
 
 // Widget Header:
 // Entity - иконка профиля
-// 2. Feature - стрелки переключения экранов
-// 3. Feature - знак +
-// 4. Feature - колокольчик
-// 5. Feature - поиск
-// 6. Feature - кнопка вызова виджета профиля
+// Feature - стрелки переключения экранов
+// Feature - знак +
+// Feature - колокольчик
+// Feature - поиск
+// Feature - кнопка вызова виджета профиля
 
 // Widget Profile:
-// 1. Entity - Никнейм и хэштег + Shared иконка профиля.
-// 2. Entity - иконка и profile
-// 3. Entity - иконка и manage chatbots
-// 4. Entity - иконка и settings
-// 5. Feature - переключение темы.
-// 6. Feature - log out
+// Entity - Никнейм и хэштег + Shared иконка профиля.
+// Entity - иконка и profile
+// Entity - иконка и manage chatbots
+// Entity - иконка и settings
+// Feature - переключение темы.
+// Feature - log out
 
 // Widget Dashboard
 // Entity - молния лого

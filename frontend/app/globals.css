@@ -16,6 +16,8 @@
   --brand-03: #8ec9db;
   --brand-02: #ea7465;
   --brand-01: #ffcc6f;
+  --font-sf-pro-display: "SF Pro Display", sans-serif;
+  --font-sf-pro-rounded: "SF Pro Rounded", sans-serif;
 }
 
 /* Устанавливаем базовые стили для текстовых элементов */
@@ -92,4 +94,11 @@ audio,
 video {
   display: block;
   max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
 }

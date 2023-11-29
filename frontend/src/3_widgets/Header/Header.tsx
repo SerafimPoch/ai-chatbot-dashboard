@@ -1,9 +1,14 @@
-import { ArrowIcon } from "@/src/6_shared/ui/icons/Arrow";
+"use client";
+import { ScreenSwitcher } from "@/src/4_features/ScreenSwitcher";
+import { HeaderContainer, HeaderTitle, SwitcherWrapper } from "./Header.styles";
 
 export default function Header() {
   return (
-    <div>
-      <ArrowIcon area={{ width: 24, height: 24 }} />
-    </div>
+    <HeaderContainer>
+      <SwitcherWrapper>
+        <HeaderTitle>Insights</HeaderTitle>
+        <ScreenSwitcher />
+      </SwitcherWrapper>
+    </HeaderContainer>
   );
 }

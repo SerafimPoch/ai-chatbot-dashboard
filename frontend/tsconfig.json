@@ -21,6 +21,7 @@
     "paths": {
       "@/*": ["./*"],
       "@/pages/*": ["./src/2_pages/*"],
+      "@/shared/*": ["./src/6_shared/*"],
       "@/public/*": ["./public/*"]
     }
   },
