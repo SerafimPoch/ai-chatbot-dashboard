@@ -20,8 +20,8 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@/pages/*": ["./src/2_pages/*"],
-      "@/shared/*": ["./src/6_shared/*"],
+      "@/pages/*": ["./2_pages/*"],
+      "@/shared/*": ["./6_shared/*"],
       "@/public/*": ["./public/*"]
     }
   },
