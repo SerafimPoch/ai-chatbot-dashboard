@@ -1,0 +1,95 @@
+/* Обнуляем margin и padding у всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --neutral-05: #1d1d1d;
+  --neutral-06: #323232;
+  --neutral-04: #929292;
+  --neutral-03: #a0a5a9;
+  --neutral-02: #f2f2f2;
+  --neutral-01: #fff;
+  --brand-05: #349264;
+  --brand-04: #5d74f1;
+  --brand-03: #8ec9db;
+  --brand-02: #ea7465;
+  --brand-01: #ffcc6f;
+}
+
+/* Устанавливаем базовые стили для текстовых элементов */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/* Удаляем стили списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Устанавливаем базовые стили для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Устанавливаем border-box для всех элементов */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Дополнительные обнуления для специфических элементов */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Обнуляем стили для форм */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Обнуляем стили для fieldset и legend */
+fieldset,
+legend {
+  padding: 0;
+  border: none;
+}
+
+/* Обнуляем стили для audio и video */
+audio,
+video {
+  display: block;
+  max-width: 100%;
+}
