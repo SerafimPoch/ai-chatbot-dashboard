@@ -6,7 +6,7 @@ import {
   SwitcherWrapper,
   HeaderNavbar,
 } from "./Header.styles";
-import { ProfileIcon } from "@/src/5_entities/ProfileIcon";
+import { ProfileIcon } from "@/src/4_features/ProfileIcon";
 import { AddScreen } from "@/src/4_features/AddScreen";
 import { Subscription } from "@/src/4_features/Subscription";
 import { Search } from "@/src/4_features/Search";
