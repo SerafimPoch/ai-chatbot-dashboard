@@ -1,7 +1,7 @@
 import Image from "next/image";
 import bellDay from "./assets/bell-day.svg?url";
 import bellHover from "./assets/bell-hover.svg?url";
-import { BELL_IMAGE_AREA } from "../consts";
+import { BELL_IMAGE_AREA } from "../constants";
 
 interface TIconProps {
   active: boolean;

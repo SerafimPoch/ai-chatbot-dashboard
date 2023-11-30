@@ -1,7 +1,7 @@
 import Image from "next/image";
 import plusDay from "./assets/plus-day.svg?url";
 import plusHover from "./assets/plus-hover.svg?url";
-import { PLUS_ICON_AREA } from "../consts";
+import { PLUS_ICON_AREA } from "../constants";
 
 interface TIconProps {
   active: boolean;

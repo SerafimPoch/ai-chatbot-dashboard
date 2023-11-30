@@ -6,7 +6,7 @@ import {
   SwitcherWrapper,
   HeaderNavbar,
 } from "./Header.styles";
-import { ProfileIcon } from "@/src/4_features/ProfileIcon";
+import { Profile } from "@/src/4_features/Profile";
 import { AddScreen } from "@/src/4_features/AddScreen";
 import { Subscription } from "@/src/4_features/Subscription";
 import { Search } from "@/src/4_features/Search";
@@ -22,7 +22,7 @@ export default function Header() {
         <AddScreen />
         <Subscription />
         <Search />
-        <ProfileIcon />
+        <Profile />
       </HeaderNavbar>
     </HeaderContainer>
   );

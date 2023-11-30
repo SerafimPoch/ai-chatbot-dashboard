@@ -1,7 +1,7 @@
 import Image from "next/image";
 import searchDay from "./assets/search-day.svg?url";
 import searchHover from "./assets/search-hover.svg?url";
-import { SEARCH_IMAGE_AREA } from "../consts";
+import { SEARCH_IMAGE_AREA } from "../constants";
 
 interface TIconProps {
   active: boolean;
