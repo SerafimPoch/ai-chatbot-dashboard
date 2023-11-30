@@ -1,4 +1,4 @@
-import { MainPage } from "@/pages/Main";
+import { MainPage } from "@/src/2_pages/Main";
 
 // Структура проекта:
 

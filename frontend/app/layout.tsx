@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { RootStyleRegistry } from "@/pages/Main";
+import { RootStyleRegistry } from "@/src/2_pages/Main";
 import "./globals.css";
 
 export const metadata: Metadata = {
