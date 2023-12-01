@@ -15,12 +15,12 @@ export default function Membership() {
           <Bar
             dataKey="uv"
             shape={<CustomBarComponent fill="#FFCC6F" />}
-            barSize={72}
+            barSize={69}
           />
           <Bar
             dataKey="amt"
             shape={<CustomBarComponent fill="#EA7465" />}
-            barSize={72}
+            barSize={69}
           />
           <XAxis
             dataKey="date"

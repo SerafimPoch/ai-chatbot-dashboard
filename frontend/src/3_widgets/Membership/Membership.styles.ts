@@ -4,7 +4,7 @@ export const MembershipContainer = styled.div`
   border-radius: 32px;
   border: 2px solid #f2f2f2;
   grid-column: 3/4;
-  padding: 24px 32px;
+  padding: 24px 16px 24px 32px;
 `;
 
 export const MembershipTitle = styled.p`
