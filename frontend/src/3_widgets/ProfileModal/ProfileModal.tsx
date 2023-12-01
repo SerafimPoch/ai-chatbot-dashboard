@@ -9,11 +9,15 @@ import { ProfileIcon } from "@/src/5_entities/ProfileIcon";
 import { UserOption } from "@/src/5_entities/UserOption";
 import { ManageBotOption } from "@/src/5_entities/ManageBotOption";
 import { SettingsOption } from "@/src/5_entities/SettingsOption";
+import { ThemeToggle } from "@/src/4_features/ThemeToggle";
+import { Logout } from "@/src/4_features/Logout";
 import {
   ProfileTag,
   ProfileInfoWrapper,
   ProfileName,
   ProfileInfoOptionList,
+  ProfileThemeWrapper,
+  ProfileLogoutWrapper,
 } from "./ProfileModal.styles";
 
 export default function ProfileModal() {
@@ -41,6 +45,12 @@ export default function ProfileModal() {
         <ManageBotOption />
         <SettingsOption />
       </ProfileInfoOptionList>
+      <ProfileThemeWrapper>
+        <ThemeToggle />
+      </ProfileThemeWrapper>
+      <ProfileLogoutWrapper>
+        <Logout />
+      </ProfileLogoutWrapper>
     </Modal>
   );
 }

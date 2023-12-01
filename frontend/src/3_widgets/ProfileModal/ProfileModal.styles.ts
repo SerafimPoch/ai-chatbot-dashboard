@@ -30,3 +30,13 @@ export const ProfileInfoOptionList = styled.div`
   padding: 8px 12px;
   border-bottom: 1px solid #f2f2f2;
 `;
+
+export const ProfileThemeWrapper = styled.div`
+  margin: 0 -28px;
+  padding: 20px 12px;
+  border-bottom: 1px solid #f2f2f2;
+`;
+
+export const ProfileLogoutWrapper = styled(ProfileInfoOptionList)`
+  border: none;
+`;

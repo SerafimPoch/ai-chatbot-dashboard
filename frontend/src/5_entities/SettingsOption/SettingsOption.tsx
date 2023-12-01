@@ -8,7 +8,7 @@ import settingsIcon from "./ui/settings-day.svg?url";
 export default function SettingsOption() {
   return (
     <SettingsOptionContainer>
-      <Image src={settingsIcon} alt="manage-bot" width={24} height={24} />
+      <Image src={settingsIcon} alt="settings" width={24} height={24} />
       <SettingsOptionText>Settings</SettingsOptionText>
     </SettingsOptionContainer>
   );
