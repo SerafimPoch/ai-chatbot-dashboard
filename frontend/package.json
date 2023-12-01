@@ -18,7 +18,8 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-modal": "^3.16.1"
+    "react-modal": "^3.16.1",
+    "recharts": "^2.10.3"
   },
   "devDependencies": {
     "@jilio/addnew": "^1.0.6",
