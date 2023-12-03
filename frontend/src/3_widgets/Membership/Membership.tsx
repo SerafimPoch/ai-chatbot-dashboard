@@ -11,7 +11,7 @@ export default function Membership() {
     <MembershipContainer>
       <MembershipTitle>Membership</MembershipTitle>
       <ResponsiveContainer width="100%" height={120}>
-        <BarChart data={CHART_DATA} margin={{ left: -10 }}>
+        <BarChart data={CHART_DATA} margin={{ left: -2 }}>
           <Bar
             dataKey="uv"
             shape={<CustomBarComponent fill="#FFCC6F" />}
