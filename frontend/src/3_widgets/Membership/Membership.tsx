@@ -11,16 +11,16 @@ export default function Membership() {
     <MembershipContainer>
       <MembershipTitle>Membership</MembershipTitle>
       <ResponsiveContainer width="100%" height={120}>
-        <BarChart data={CHART_DATA} margin={{ left: -20 }}>
+        <BarChart data={CHART_DATA} margin={{ left: -10 }}>
           <Bar
             dataKey="uv"
             shape={<CustomBarComponent fill="#FFCC6F" />}
-            barSize={69}
+            barSize={65}
           />
           <Bar
             dataKey="amt"
             shape={<CustomBarComponent fill="#EA7465" />}
-            barSize={69}
+            barSize={65}
           />
           <XAxis
             dataKey="date"

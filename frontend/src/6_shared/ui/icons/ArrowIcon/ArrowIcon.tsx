@@ -5,10 +5,8 @@ interface TIconProps {
   style?: React.CSSProperties;
 }
 
-const ArrowIcon = ({ style }: TIconProps) => {
-  return (
-    <Image src={arrowIcon} alt="arrow" width={24} height={24} style={style} />
-  );
-};
+const ArrowIcon = ({ style }: TIconProps) => (
+  <Image src={arrowIcon} alt="arrow" width={24} height={24} style={style} />
+);
 
 export default ArrowIcon;
