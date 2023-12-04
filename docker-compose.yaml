@@ -12,3 +12,19 @@ services:
     volumes:
       - ./frontend:/app
       - /app/node_modules
+
+  nginx:
+    image: nginx:stable-alpine
+    container_name: ai-chatbot-nginx
+    depends_on:
+      - frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf.prod:/etc/nginx/nginx.conf
+    networks:
+      - ai-chatbot-network
+
+networks:
+  ai-chatbot-network:
+    driver: bridge
