@@ -6,12 +6,12 @@ export const AUDIENCE_DATA = [
       {
         name: "New",
         color: "#5D74F1",
-        percent: "8",
+        percent: 8,
       },
       {
         name: "Subscribed",
         color: "#8EC9DB",
-        percent: "2",
+        percent: 2,
       },
     ],
   },
@@ -21,13 +21,13 @@ export const AUDIENCE_DATA = [
     info: [
       {
         name: "New",
-        percent: "4",
+        percent: 4,
         color: "#5D74F1",
       },
       {
         name: "Subscribed",
         color: "#8EC9DB",
-        percent: "1",
+        percent: 1,
       },
     ],
   },
@@ -38,12 +38,12 @@ export const AUDIENCE_DATA = [
       {
         name: "New",
         color: "#5D74F1",
-        percent: "16",
+        percent: 16,
       },
       {
         name: "Subscribed",
         color: "#8EC9DB",
-        percent: "8",
+        percent: 8,
       },
     ],
   },
@@ -54,12 +54,12 @@ export const AUDIENCE_DATA = [
       {
         name: "New",
         color: "#5D74F1",
-        percent: "22",
+        percent: 22,
       },
       {
         name: "Subscribed",
         color: "#8EC9DB",
-        percent: "14",
+        percent: 14,
       },
     ],
   },

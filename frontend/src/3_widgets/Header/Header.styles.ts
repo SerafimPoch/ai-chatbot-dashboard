@@ -4,7 +4,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 24px 0 44px 0;
+  margin: 24px 0 68px 0;
 `;
 
 export const HeaderTitle = styled.h3`

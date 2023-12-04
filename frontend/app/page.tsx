@@ -2,7 +2,7 @@ import { MainPage } from "@/src/2_pages/Main";
 
 // Структура проекта:
 
-// Widget Header:
+// Widget Header: +
 // Entity - иконка профиля
 // Feature - стрелки переключения экранов
 // Feature - знак +
@@ -10,7 +10,7 @@ import { MainPage } from "@/src/2_pages/Main";
 // Feature - поиск
 // Feature - кнопка вызова виджета профиля
 
-// Widget Profile:
+// Widget Profile: +
 // Entity - Никнейм и хэштег + Shared иконка профиля.
 // Entity - иконка и profile
 // Entity - иконка и manage chatbots
@@ -31,10 +31,10 @@ import { MainPage } from "@/src/2_pages/Main";
 // Feature - view earning
 // Entity - statistic
 
-// Widget Membership
+// Widget Membership +
 // Entity - график (картинка)
 
-// Widget Audiences
+// Widget Audiences +
 // Entity - circle chart
 // Entity - процент и статистика ниже
 // Feature - переключатель статистики

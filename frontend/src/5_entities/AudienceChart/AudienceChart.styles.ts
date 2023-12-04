@@ -40,25 +40,3 @@ export const AudienceChartLabelText = styled.p`
   color: var(--text-primary);
   margin-right: 5px;
 `;
-
-export const AudienceChartStatisticWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2px;
-`;
-
-export const AudienceChartStatisticTriangle = styled.div`
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 10px solid var(--brand-05);
-`;
-
-export const AudienceChartStatisticPercent = styled.p`
-  font-family: var(--font-sf-pro-rounded);
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  color: var(--brand-05);
-`;

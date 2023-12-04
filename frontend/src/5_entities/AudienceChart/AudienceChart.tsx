@@ -7,12 +7,10 @@ import {
   AudienceChartLabelText,
   AudienceChartLabelWrapper,
   AudienceChartPercent,
-  AudienceChartStatisticPercent,
-  AudienceChartStatisticTriangle,
-  AudienceChartStatisticWrapper,
 } from "./AudienceChart.styles";
 import chartMockIcon from "./ui/circle.svg?url";
 import { AUDIENCE_DATA } from "./constants";
+import { PercentIndicator } from "../PercentIndicator";
 
 export default function AudienceChart() {
   const activeId = useStore($activeAudienceChart);
@@ -27,12 +25,7 @@ export default function AudienceChart() {
               <AudienceChartLabelWrapper key={name}>
                 <AudienceChartLabel color={color} />
                 <AudienceChartLabelText>{name}</AudienceChartLabelText>
-                <AudienceChartStatisticWrapper>
-                  <AudienceChartStatisticTriangle />
-                  <AudienceChartStatisticPercent>
-                    {percent}%
-                  </AudienceChartStatisticPercent>
-                </AudienceChartStatisticWrapper>
+                <PercentIndicator percent={percent} />
               </AudienceChartLabelWrapper>
             ))}
           </div>
