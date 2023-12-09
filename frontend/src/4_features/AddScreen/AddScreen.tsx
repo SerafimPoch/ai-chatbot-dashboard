@@ -1,5 +1,8 @@
 import { useState } from "react";
-import PlusIcon from "./ui/PlusIcon";
+import Image from "next/image";
+import plusDay from "./ui/plus-day.svg?url";
+import plusHover from "./ui/plus-hover.svg?url";
+import { PLUS_ICON_AREA } from "./constants";
 
 export default function AddScreen() {
   const [hovered, setHovered] = useState(false);
@@ -11,7 +14,12 @@ export default function AddScreen() {
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
     >
-      <PlusIcon active={hovered} />
+      <Image
+        src={hovered ? plusHover : plusDay}
+        alt="arrow"
+        width={PLUS_ICON_AREA.width}
+        height={PLUS_ICON_AREA.height}
+      />
     </button>
   );
 }

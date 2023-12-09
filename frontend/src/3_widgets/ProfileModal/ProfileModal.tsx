@@ -5,7 +5,7 @@ import {
   handleProfileModalState,
 } from "@/src/6_shared/store";
 import { CUSTOM_MODAL_STYLES, PROFILE_MODAL_ICON_AREA } from "./constants";
-import { ProfileIcon } from "@/src/5_entities/ProfileIcon";
+import { ProfileIcon } from "@/src/6_shared/ui/icons/ProfileIcon";
 import { UserOption } from "@/src/5_entities/UserOption";
 import { ManageBotOption } from "@/src/5_entities/ManageBotOption";
 import { SettingsOption } from "@/src/5_entities/SettingsOption";

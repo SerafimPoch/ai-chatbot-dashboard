@@ -1,6 +1,9 @@
 import { useState } from "react";
-import SearchIcon from "./ui/SearchIcon";
+import Image from "next/image";
 import { SearchContainer } from "./Search.styles";
+import searchHover from "./ui/search-hover.svg?url";
+import searchDay from "./ui/search-day.svg?url";
+import { SEARCH_IMAGE_AREA } from "./constants";
 
 export default function Search() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -11,7 +14,12 @@ export default function Search() {
     <SearchContainer>
       {isSearchOpen && <input type="search" />}
       <button onClick={() => handleSearch()}>
-        <SearchIcon active={isSearchOpen} />
+        <Image
+          src={isSearchOpen ? searchHover : searchDay}
+          alt="arrow"
+          width={SEARCH_IMAGE_AREA.width}
+          height={SEARCH_IMAGE_AREA.height}
+        />
       </button>
     </SearchContainer>
   );

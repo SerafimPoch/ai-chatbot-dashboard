@@ -1,5 +1,8 @@
+import Image from "next/image";
 import { useState } from "react";
-import BellIcon from "./ui/BellIcon";
+import { BELL_IMAGE_AREA } from "./constants";
+import bellHover from "./ui/bell-hover.svg?url";
+import bellDay from "./ui/bell-day.svg?url";
 
 export default function Subscription() {
   const [hovered, setHovered] = useState(false);
@@ -11,7 +14,12 @@ export default function Subscription() {
       onMouseEnter={() => handleHover(true)}
       onMouseLeave={() => handleHover(false)}
     >
-      <BellIcon active={hovered} />
+      <Image
+        src={hovered ? bellHover : bellDay}
+        alt="arrow"
+        width={BELL_IMAGE_AREA.width}
+        height={BELL_IMAGE_AREA.height}
+      />
     </button>
   );
 }
