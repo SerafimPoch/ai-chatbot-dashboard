@@ -14,7 +14,7 @@ export const MainContainer = styled.div`
 
 export const MainContentWrapper = styled.div`
   display: grid;
-  grid-template-columns: minmax(700px, 2fr) minmax(500px, 1fr);
+  grid-template-columns: minmax(700px, 1.5fr) minmax(500px, 1fr);
   grid-row-gap: 8px;
   grid-column-gap: 8px;
 `;

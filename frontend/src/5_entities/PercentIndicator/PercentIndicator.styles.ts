@@ -1,9 +1,5 @@
 import styled from "@emotion/styled";
 
-interface TPercentIndicatorTriangle {
-  isPercentNegative: boolean;
-}
-
 interface TPercentIndicatorValue {
   isPercentNegative: boolean;
 }

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ViewEarning } from "@/src/5_entities/ViewEarning";
-import { StatisticInfo } from "@/src/5_entities/StatisticInfo";
 import {
   StatisticContainer,
   StatisticBoyIconWrapper,
@@ -8,6 +7,7 @@ import {
   StatisticTitleWrapper,
 } from "./Statistic.styles";
 import boyIcon from "./ui/boy.svg?url";
+import { StatisticInfo } from "./components/StatisticInfo";
 
 export default function Statistic() {
   return (

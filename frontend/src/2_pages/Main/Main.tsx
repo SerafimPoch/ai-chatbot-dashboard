@@ -5,6 +5,7 @@ import { Header } from "@/src/3_widgets/Header";
 import { ProfileModal } from "@/src/3_widgets/ProfileModal";
 import { Audiences } from "@/src/3_widgets/Audiences";
 import { Statistic } from "@/src/3_widgets/Statistic";
+import { Earnings } from "@/src/3_widgets/Earnings";
 import { $isProfileModalOpen } from "@/src/6_shared/store";
 import { Container, MainContainer, MainContentWrapper } from "./Main.styles";
 
@@ -24,6 +25,7 @@ export default function MainPage() {
           <Statistic />
           <Membership />
           <Audiences />
+          <Earnings />
         </MainContentWrapper>
       </Container>
     </MainContainer>
