@@ -6,7 +6,7 @@ import {
   StatisticTitle,
   StatisticTitleWrapper,
 } from "./Statistic.styles";
-import boyIcon from "./ui/boy.svg?url";
+import boyIcon from "./assets/boy.svg?url";
 import { StatisticInfo } from "./components/StatisticInfo";
 
 export default function Statistic() {

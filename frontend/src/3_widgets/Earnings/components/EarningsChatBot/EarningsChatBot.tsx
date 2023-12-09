@@ -4,8 +4,8 @@ import {
   EarningsChatBotModel,
   EarningsChatBotName,
 } from "./EarningsChatBot.styles";
-import chatBotIcon from "./ui/chatbot.svg?url";
-import chatBotRedIcon from "./ui/chatbot-red.svg?url";
+import chatBotIcon from "./assets/chatbot.svg?url";
+import chatBotRedIcon from "./assets/chatbot-red.svg?url";
 
 interface TEarningsChatBot {
   version: number;

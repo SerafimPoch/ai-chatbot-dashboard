@@ -3,7 +3,7 @@ import {
   SettingsOptionContainer,
   SettingsOptionText,
 } from "./SettingsOption.styles";
-import settingsIcon from "./ui/settings-day.svg?url";
+import settingsIcon from "./assets/settings-day.svg?url";
 
 export default function SettingsOption() {
   return (

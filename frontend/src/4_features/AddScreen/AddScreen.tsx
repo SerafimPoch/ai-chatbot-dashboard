@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import plusDay from "./ui/plus-day.svg?url";
-import plusHover from "./ui/plus-hover.svg?url";
+import plusDay from "./assets/plus-day.svg?url";
+import plusHover from "./assets/plus-hover.svg?url";
 import { PLUS_ICON_AREA } from "./constants";
 
 export default function AddScreen() {

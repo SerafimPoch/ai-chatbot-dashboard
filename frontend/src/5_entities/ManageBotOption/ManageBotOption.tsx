@@ -3,7 +3,7 @@ import {
   ManageBotOptionContainer,
   ManageBotOptionText,
 } from "./ManageBotOption.styles";
-import chatBotIcon from "./ui/manageBot-day.svg?url";
+import chatBotIcon from "./assets/manageBot-day.svg?url";
 
 export default function ManageBotOption() {
   return (

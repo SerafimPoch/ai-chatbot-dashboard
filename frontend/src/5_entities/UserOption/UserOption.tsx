@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { UserOptionContainer, UserOptionText } from "./UserOption.styles";
-import userIcon from "./ui/user-day.svg?url";
+import userIcon from "./assets/user-day.svg?url";
 
 export default function UserOption() {
   return (

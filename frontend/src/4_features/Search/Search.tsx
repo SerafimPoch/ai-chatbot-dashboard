@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { SearchContainer } from "./Search.styles";
-import searchHover from "./ui/search-hover.svg?url";
-import searchDay from "./ui/search-day.svg?url";
+import searchHover from "./assets/search-hover.svg?url";
+import searchDay from "./assets/search-day.svg?url";
 import { SEARCH_IMAGE_AREA } from "./constants";
 
 export default function Search() {

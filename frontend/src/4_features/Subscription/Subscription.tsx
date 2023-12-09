@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import { BELL_IMAGE_AREA } from "./constants";
-import bellHover from "./ui/bell-hover.svg?url";
-import bellDay from "./ui/bell-day.svg?url";
+import bellHover from "./assets/bell-hover.svg?url";
+import bellDay from "./assets/bell-day.svg?url";
 
 export default function Subscription() {
   const [hovered, setHovered] = useState(false);

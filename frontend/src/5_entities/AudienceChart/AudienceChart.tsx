@@ -8,7 +8,7 @@ import {
   AudienceChartLabelWrapper,
   AudienceChartPercent,
 } from "./AudienceChart.styles";
-import chartMockIcon from "./ui/circle.svg?url";
+import chartMockIcon from "./assets/circle.svg?url";
 import { AUDIENCE_DATA } from "./constants";
 import { PercentIndicator } from "../PercentIndicator";
 
