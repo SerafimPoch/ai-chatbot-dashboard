@@ -1,4 +1,4 @@
-import { PercentIndicator } from "../../../../5_entities/PercentIndicator";
+import { PercentIndicator } from "../PercentIndicator";
 import {
   StatisticInfoContainer,
   StatisticInfoNumbersWrapper,
