@@ -1,4 +1,4 @@
-import { PercentIndicator } from "../PercentIndicator";
+import { PercentIndicator } from "@/src/6_shared/ui/components/PercentIndicator";
 import {
   StatisticInfoContainer,
   StatisticInfoNumbersWrapper,

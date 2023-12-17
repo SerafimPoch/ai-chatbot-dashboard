@@ -1,6 +1,6 @@
 import { TimeSwitcher } from "@/src/4_features/TimeSwitcher";
-import { PercentIndicator } from "@/src/5_entities/PercentIndicator";
-import { ProgressBar } from "@/src/5_entities/ProgressBar";
+import { PercentIndicator } from "@/src/6_shared/ui/components/PercentIndicator";
+import { ProgressBar } from "@/src/6_shared/ui/components/ProgressBar";
 import {
   EarningsContainer,
   EarningsTitleWrapper,
