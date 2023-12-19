@@ -1,25 +1,31 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Image from "next/image";
-import { SearchContainer } from "./Search.styles";
-import searchHover from "./assets/search-hover.svg?url";
+import { useStore } from "@nanostores/react";
+import { $theme } from "@/src/6_shared/store";
+import { THEME_LIGHT_KEY } from "@/src/6_shared/constants";
+import { SearchContainer, SearchInput } from "./Search.styles";
 import searchDay from "./assets/search-day.svg?url";
-import { SEARCH_IMAGE_AREA } from "./constants";
+import searchNight from "./assets/search-night.svg?url";
 
 export default function Search() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const theme = useStore($theme);
+
+  const searchIcon = useMemo(
+    () => (theme.type === THEME_LIGHT_KEY ? searchDay : searchNight),
+    [theme.type]
+  );
 
   const handleSearch = () => setIsSearchOpen(!isSearchOpen);
 
   return (
     <SearchContainer>
-      {isSearchOpen && <input type="search" />}
+      {isSearchOpen && (
+        <SearchInput type="search" onBlur={() => handleSearch()} />
+      )}
       <button onClick={() => handleSearch()}>
-        <Image
-          src={isSearchOpen ? searchHover : searchDay}
-          alt="arrow"
-          width={SEARCH_IMAGE_AREA.width}
-          height={SEARCH_IMAGE_AREA.height}
-        />
+        <Image src={searchIcon} alt="search" width={48} height={48} />
       </button>
     </SearchContainer>
   );

@@ -19,8 +19,8 @@ export default function MainPage() {
   return (
     <MainContainer>
       {isProfileModalOpen && <ProfileModal />}
-      <Header />
       <Container>
+        <Header />
         <MainContentWrapper>
           <Statistic />
           <Membership />

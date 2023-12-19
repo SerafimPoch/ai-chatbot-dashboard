@@ -5,8 +5,8 @@ import { THEME_LIGHT_KEY, THEME_DARK_KEY } from "@/src/6_shared/constants";
 
 export default function ThemeToggle() {
   const theme = useStore($theme);
-  const isLightTheme = theme === THEME_LIGHT_KEY;
-  const isDarkTheme = theme === THEME_DARK_KEY;
+  const isLightTheme = theme.type === THEME_LIGHT_KEY;
+  const isDarkTheme = theme.type === THEME_DARK_KEY;
 
   return (
     <ThemeToggleContainer>

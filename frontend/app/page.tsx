@@ -44,9 +44,5 @@ import { MainPage } from "@/src/2_pages/Main";
 // Entity - таблица
 
 export default function Home() {
-  return (
-    <main>
-      <MainPage />
-    </main>
-  );
+  return <MainPage />;
 }

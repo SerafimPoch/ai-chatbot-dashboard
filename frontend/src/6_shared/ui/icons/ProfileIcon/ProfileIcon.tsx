@@ -1,6 +1,5 @@
 import Image from "next/image";
 import avatarUrl from "./avatar.svg?url";
-
 interface TProfileIcon {
   area: {
     width: number;
