@@ -1,3 +1,4 @@
+import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
 import styled from "@emotion/styled";
 
 export const MembershipContainer = styled.div`
@@ -12,7 +13,7 @@ export const MembershipTitle = styled.p`
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  color: var(--text-primary);
+  color: ${() => useThemeColor().textPrimary};
   margin-bottom: 16px;
 `;
 

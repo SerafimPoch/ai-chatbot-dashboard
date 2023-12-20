@@ -1,3 +1,4 @@
+import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
 import styled from "@emotion/styled";
 
 export const EarningsContainer = styled.div`
@@ -17,7 +18,7 @@ export const EarningsTitleWrapper = styled.div`
 
 export const EarningsTitle = styled.p`
   font-family: var(--font-sf-pro-rounded);
-  color: var(--text-primary);
+  color: ${() => useThemeColor().textPrimary};
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -45,7 +46,7 @@ export const EarningsContentHeadlines = styled.p`
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  color: var(--text-secondary);
+  color: ${() => useThemeColor().textSecondary};
 `;
 
 export const EarningsContentBoldText = styled(EarningsTitle)`
@@ -59,7 +60,7 @@ export const EarningsContentLifeWrapper = styled.div`
 `;
 
 export const EarningsContentLightText = styled(EarningsContentBoldText)`
-  color: var(--text-secondary);
+  color: ${() => useThemeColor().textSecondary};
 `;
 
 export const EarningsContentCapacity = styled.div`

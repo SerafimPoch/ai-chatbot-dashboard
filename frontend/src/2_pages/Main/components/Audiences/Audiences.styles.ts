@@ -1,3 +1,4 @@
+import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
 import styled from "@emotion/styled";
 
 interface TAudienceChartLabel {
@@ -20,7 +21,7 @@ export const AudiencesTitle = styled.p`
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  color: var(--text-primary);
+  color: ${() => useThemeColor().textPrimary};
   margin-bottom: 16px;
 `;
 
@@ -35,7 +36,7 @@ export const AudienceChartPercent = styled.p`
   font-size: 64px;
   font-weight: 700;
   line-height: 64px;
-  color: var(--text-primary);
+  color: ${() => useThemeColor().textPrimary};
   margin-bottom: 12px;
 `;
 
@@ -57,6 +58,6 @@ export const AudienceChartLabelText = styled.p`
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  color: var(--text-primary);
+  color: ${() => useThemeColor().textPrimary};
   margin-right: 5px;
 `;

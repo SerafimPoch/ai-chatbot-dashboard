@@ -9,5 +9,7 @@ export const useThemeColor = () => {
   return {
     coreBackground: isLightTheme ? "#fff" : "#1D1D1D",
     textPrimary: isLightTheme ? "#1D1D1D" : "#fff",
+    textSecondary: isLightTheme ? "#A0A5A9" : "#929292",
+    grey: isLightTheme ? "#F2F2F2" : "#323232",
   };
 };

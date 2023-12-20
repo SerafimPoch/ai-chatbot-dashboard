@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
 
 export const ArrowTogglerContainer = styled.div`
   display: flex;
@@ -8,6 +9,6 @@ export const ArrowTogglerContainer = styled.div`
   gap: 32px;
   align-self: stretch;
   border-radius: 12px;
-  background: #f2f2f2;
+  background: ${() => useThemeColor().grey};
   width: 56px;
 `;

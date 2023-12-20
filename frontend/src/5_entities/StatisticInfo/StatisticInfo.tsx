@@ -10,12 +10,12 @@ import { STATISTIC_DATA_VALUES } from "./constants";
 export default function StatisticInfo() {
   return (
     <StatisticInfoContainer>
-      {STATISTIC_DATA_VALUES.map((e) => (
-        <div key={e.id}>
-          <StatisticInfoTitle>{e.name}</StatisticInfoTitle>
+      {STATISTIC_DATA_VALUES.map(({ id, name, value, percent }) => (
+        <div key={id}>
+          <StatisticInfoTitle>{name}</StatisticInfoTitle>
           <StatisticInfoNumbersWrapper>
-            <StatisticInfoValue>{e.value}</StatisticInfoValue>
-            <PercentIndicator percent={e.percent} />
+            <StatisticInfoValue>{value}</StatisticInfoValue>
+            <PercentIndicator percent={percent} />
           </StatisticInfoNumbersWrapper>
         </div>
       ))}

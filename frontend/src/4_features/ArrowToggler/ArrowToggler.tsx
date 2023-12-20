@@ -1,6 +1,6 @@
+import { useStore } from "@nanostores/react";
 import { ArrowIcon } from "@/src/6_shared/ui/icons/ArrowIcon";
 import { ArrowTogglerContainer } from "./ArrowToggler.styles";
-import { useStore } from "@nanostores/react";
 import {
   $activeAudienceChart,
   changeActiveAudienceChart,

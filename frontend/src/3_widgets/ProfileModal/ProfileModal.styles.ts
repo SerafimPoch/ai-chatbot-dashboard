@@ -1,3 +1,4 @@
+import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
 import styled from "@emotion/styled";
 
 export const ProfileInfoWrapper = styled.div`
@@ -14,7 +15,7 @@ export const ProfileName = styled.p`
   font-weight: 600;
   line-height: 24px;
   font-family: var(--font-sf-pro-rounded);
-  color: var(--text-primary);
+  color: ${() => useThemeColor().textPrimary};
 `;
 
 export const ProfileTag = styled.p`
@@ -22,7 +23,7 @@ export const ProfileTag = styled.p`
   font-weight: 500;
   line-height: 20px;
   font-family: var(--font-sf-pro-rounded);
-  color: var(--text-secondary);
+  color: ${() => useThemeColor().textSecondary};
 `;
 
 export const ProfileInfoOptionList = styled.div`

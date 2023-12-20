@@ -1,3 +1,4 @@
+import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
 import styled from "@emotion/styled";
 
 export const StatisticContainer = styled.div`
@@ -32,4 +33,24 @@ export const StatisticTitle = styled.p`
   line-height: 64px;
   color: var(--neutral-05);
   margin-bottom: 24px;
+`;
+
+export const ViewEarningBtn = styled.button`
+  width: fit-content;
+  height: 48px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background-color: ${() => useThemeColor().textPrimary};
+  color: ${() => useThemeColor().coreBackground};
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: var(--font-sf-pro-rounded);
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;

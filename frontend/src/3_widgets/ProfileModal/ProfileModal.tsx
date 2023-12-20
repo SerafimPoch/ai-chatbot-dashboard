@@ -2,9 +2,14 @@ import { useStore } from "@nanostores/react";
 import Modal from "react-modal";
 import {
   $isProfileModalOpen,
+  $theme,
   handleProfileModalState,
 } from "@/src/6_shared/store";
-import { CUSTOM_MODAL_STYLES, PROFILE_MODAL_ICON_AREA } from "./constants";
+import {
+  CUSTOM_MODAL_STYLES_DAY,
+  CUSTOM_MODAL_STYLES_NIGHT,
+  PROFILE_MODAL_ICON_AREA,
+} from "./constants";
 import { ProfileIcon } from "@/src/6_shared/ui/icons/ProfileIcon";
 import { UserOption } from "./components/UserOption";
 import { ManageBotOption } from "./components/ManageBotOption";
@@ -19,9 +24,12 @@ import {
   ProfileThemeWrapper,
   ProfileLogoutWrapper,
 } from "./ProfileModal.styles";
+import { THEME_LIGHT_KEY } from "@/src/6_shared/constants";
 
 export default function ProfileModal() {
   const isProfileModalOpen = useStore($isProfileModalOpen);
+
+  const theme = useStore($theme);
 
   const onCloseProfileModal = () => handleProfileModalState(false);
 
@@ -31,7 +39,11 @@ export default function ProfileModal() {
       isOpen={isProfileModalOpen}
       onRequestClose={onCloseProfileModal}
       contentLabel="Profile"
-      style={CUSTOM_MODAL_STYLES}
+      style={
+        theme.type === THEME_LIGHT_KEY
+          ? CUSTOM_MODAL_STYLES_DAY
+          : CUSTOM_MODAL_STYLES_NIGHT
+      }
     >
       <ProfileInfoWrapper>
         <div>
