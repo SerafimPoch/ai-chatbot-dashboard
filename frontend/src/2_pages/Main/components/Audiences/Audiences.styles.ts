@@ -1,4 +1,4 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 interface TAudienceChartLabel {
@@ -17,12 +17,18 @@ export const AudiencesContainer = styled.div`
 `;
 
 export const AudiencesTitle = styled.p`
-  font-family: var(--font-sf-pro-rounded);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  color: ${() => useThemeColor().textPrimary};
-  margin-bottom: 16px;
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-family: var(--font-sf-pro-rounded);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      color: ${themeColors?.textPrimary};
+      margin-bottom: 16px;
+    `;
+  }}
 `;
 
 export const AudienceChartContainer = styled.div`
@@ -32,12 +38,18 @@ export const AudienceChartContainer = styled.div`
 `;
 
 export const AudienceChartPercent = styled.p`
-  font-family: var(--font-sf-pro-display);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 64px;
-  color: ${() => useThemeColor().textPrimary};
-  margin-bottom: 12px;
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-family: var(--font-sf-pro-display);
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 64px;
+      color: ${themeColors?.textPrimary};
+      margin-bottom: 12px;
+    `;
+  }}
 `;
 
 export const AudienceChartLabelWrapper = styled.div`
@@ -54,10 +66,16 @@ export const AudienceChartLabel = styled.div<TAudienceChartLabel>`
 `;
 
 export const AudienceChartLabelText = styled.p`
-  font-family: var(--font-sf-pro-rounded);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  color: ${() => useThemeColor().textPrimary};
-  margin-right: 5px;
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-family: var(--font-sf-pro-rounded);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: ${themeColors?.textPrimary};
+      margin-right: 5px;
+    `;
+  }}
 `;

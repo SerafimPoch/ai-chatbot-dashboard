@@ -1,4 +1,4 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 export const ProfileInfoWrapper = styled.div`
@@ -11,19 +11,31 @@ export const ProfileInfoWrapper = styled.div`
 `;
 
 export const ProfileName = styled.p`
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 24px;
-  font-family: var(--font-sf-pro-rounded);
-  color: ${() => useThemeColor().textPrimary};
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      font-family: var(--font-sf-pro-rounded);
+      color: ${themeColors?.textPrimary};
+    `;
+  }}
 `;
 
 export const ProfileTag = styled.p`
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  font-family: var(--font-sf-pro-rounded);
-  color: ${() => useThemeColor().textSecondary};
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      font-family: var(--font-sf-pro-rounded);
+      color: ${themeColors?.textSecondary};
+    `;
+  }}
 `;
 
 export const ProfileInfoOptionList = styled.div`

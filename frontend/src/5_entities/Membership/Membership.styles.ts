@@ -1,4 +1,4 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 export const MembershipContainer = styled.div`
@@ -9,12 +9,18 @@ export const MembershipContainer = styled.div`
 `;
 
 export const MembershipTitle = styled.p`
-  font-family: var(--font-sf-pro-rounded);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  color: ${() => useThemeColor().textPrimary};
-  margin-bottom: 16px;
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-family: var(--font-sf-pro-rounded);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      color: ${themeColors?.textPrimary};
+      margin-bottom: 16px;
+    `;
+  }}
 `;
 
 export const CustomBarComponent = styled.rect`

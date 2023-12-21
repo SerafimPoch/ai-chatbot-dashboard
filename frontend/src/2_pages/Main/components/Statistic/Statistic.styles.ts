@@ -1,4 +1,4 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 export const StatisticContainer = styled.div`
@@ -36,21 +36,27 @@ export const StatisticTitle = styled.p`
 `;
 
 export const ViewEarningBtn = styled.button`
-  width: fit-content;
-  height: 48px;
-  padding: 12px 24px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border-radius: 12px;
-  background-color: ${() => useThemeColor().textPrimary};
-  color: ${() => useThemeColor().coreBackground};
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  font-family: var(--font-sf-pro-rounded);
+  ${() => {
+    const themeColors = useThemeContext();
 
-  &:hover {
-    opacity: 0.5;
-  }
+    return `
+      width: fit-content;
+      height: 48px;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-radius: 12px;
+      background-color: ${themeColors?.textPrimary};
+      color: ${themeColors?.coreBackground};
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      font-family: var(--font-sf-pro-rounded);
+
+      &:hover {
+        opacity: 0.5;
+      }
+    `;
+  }}
 `;

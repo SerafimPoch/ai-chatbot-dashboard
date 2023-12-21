@@ -4,9 +4,10 @@ import dynamic from "next/dynamic";
 import { Header } from "@/src/3_widgets/Header";
 import { ProfileModal } from "@/src/3_widgets/ProfileModal";
 import { Audiences } from "@/src/2_pages/Main/components/Audiences";
-import { Earnings } from "./components/Earnings";
 import { $isProfileModalOpen } from "@/src/6_shared/store";
+import { SideBar } from "@/src/3_widgets/SideBar";
 import { Statistic } from "./components/Statistic";
+import { Earnings } from "./components/Earnings";
 import { Container, MainContainer, MainContentWrapper } from "./Main.styles";
 
 const Membership = dynamic(() =>
@@ -19,6 +20,7 @@ export default function MainPage() {
   return (
     <MainContainer>
       {isProfileModalOpen && <ProfileModal />}
+      <SideBar />
       <Container>
         <Header />
         <MainContentWrapper>

@@ -1,4 +1,4 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 export const EarningsContainer = styled.div`
@@ -17,11 +17,17 @@ export const EarningsTitleWrapper = styled.div`
 `;
 
 export const EarningsTitle = styled.p`
-  font-family: var(--font-sf-pro-rounded);
-  color: ${() => useThemeColor().textPrimary};
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-family: var(--font-sf-pro-rounded);
+      color: ${themeColors?.textPrimary};
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+    `;
+  }}
 `;
 
 export const EarningsContent = styled.div`
@@ -42,11 +48,17 @@ export const EarningsItemWrapper = styled(EarningsContent)`
 `;
 
 export const EarningsContentHeadlines = styled.p`
-  font-family: var(--font-sf-pro-rounded);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  color: ${() => useThemeColor().textSecondary};
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      font-family: var(--font-sf-pro-rounded);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: ${themeColors?.textSecondary};
+    `;
+  }}
 `;
 
 export const EarningsContentBoldText = styled(EarningsTitle)`
@@ -60,7 +72,13 @@ export const EarningsContentLifeWrapper = styled.div`
 `;
 
 export const EarningsContentLightText = styled(EarningsContentBoldText)`
-  color: ${() => useThemeColor().textSecondary};
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      color: ${themeColors?.textSecondary};
+    `;
+  }}
 `;
 
 export const EarningsContentCapacity = styled.div`

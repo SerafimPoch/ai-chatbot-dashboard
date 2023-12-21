@@ -1,4 +1,4 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 export const SearchContainer = styled.div`
@@ -9,10 +9,16 @@ export const SearchContainer = styled.div`
 `;
 
 export const SearchInput = styled.input`
-  background: transparent;
-  border: 1px solid #5d74f1;
-  outline: none;
-  border-radius: 6px;
-  padding: 0 5px;
-  color: ${() => useThemeColor().textPrimary};
+  ${() => {
+    const themeColors = useThemeContext();
+
+    return `
+      background: transparent;
+      border: 1px solid #5d74f1;
+      outline: none;
+      border-radius: 6px;
+      padding: 0 5px;
+      color: ${themeColors?.textPrimary};
+    `;
+  }}
 `;

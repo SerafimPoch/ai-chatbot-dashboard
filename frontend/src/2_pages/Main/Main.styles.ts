@@ -1,17 +1,25 @@
-import { useThemeColor } from "@/src/6_shared/hooks/useThemeColor";
+import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
 import styled from "@emotion/styled";
 
 export const MainContainer = styled.main`
-  width: 100vw;
-  padding: 44px 64px 64px 64px;
-  background: ${() => useThemeColor().coreBackground};
+  ${({ theme }) => {
+    const themeColors = useThemeContext();
+
+    return `
+      width: 100vw;
+      padding: 44px 64px 64px 20px;
+      background: ${themeColors?.coreBackground};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+    `;
+  }}
 `;
 
 export const Container = styled.div`
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;
 `;
 
 export const MainContentWrapper = styled.div`
