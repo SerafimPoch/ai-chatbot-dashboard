@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { TimeSwitcher } from "@/src/4_features/TimeSwitcher";
 import { PercentIndicator } from "@/src/6_shared/ui/components/PercentIndicator";
 import { ProgressBar } from "@/src/6_shared/ui/components/ProgressBar";
@@ -12,9 +13,13 @@ import {
   EarningsContentCapacity,
   EarningsContentLightText,
   EarningsItemWrapper,
+  EarningsChatBotContainer,
+  EarningsChatBotName,
+  EarningsChatBotModel,
 } from "./Earnings.styles";
-import EarningsChatBot from "./components/EarningsChatBot/EarningsChatBot";
 import { EARNINGS_DATA } from "./constants";
+import chatBotIcon from "./assets/chatbot.svg?url";
+import chatBotRedIcon from "./assets/chatbot-red.svg?url";
 
 export default function Earnings() {
   return (
@@ -33,7 +38,22 @@ export default function Earnings() {
       {EARNINGS_DATA.map(
         ({ id, version, pledge, lifetime, storage, space }) => (
           <EarningsItemWrapper key={id}>
-            <EarningsChatBot version={version} />
+            <EarningsChatBotContainer>
+              {version === 4 ? (
+                <Image src={chatBotIcon} alt="chatbot" width={64} height={64} />
+              ) : (
+                <Image
+                  src={chatBotRedIcon}
+                  alt="chatbot-red"
+                  width={64}
+                  height={64}
+                />
+              )}
+              <div>
+                <EarningsChatBotName>EchoBot</EarningsChatBotName>
+                <EarningsChatBotModel>{`GPT${version}-based`}</EarningsChatBotModel>
+              </div>
+            </EarningsChatBotContainer>
             <EarningsContentBoldText>${pledge}</EarningsContentBoldText>
             <EarningsContentLifeWrapper>
               <EarningsContentBoldText>
