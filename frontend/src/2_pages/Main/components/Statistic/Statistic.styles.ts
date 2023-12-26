@@ -1,4 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const StatisticContainer = styled.div`
@@ -13,6 +14,11 @@ export const StatisticContainer = styled.div`
     #c7b4ff 105.59%
   );
   grid-row: 1 / span 2;
+
+  @media (max-width: ${LAPTOP_MQ}px) {
+    grid-row: 1;
+    grid-column: 1/3;
+  }
 `;
 
 export const StatisticBoyIconWrapper = styled.div`

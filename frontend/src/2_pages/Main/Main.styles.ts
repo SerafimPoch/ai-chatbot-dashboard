@@ -1,8 +1,9 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const MainContainer = styled.main`
-  ${({ theme }) => {
+  ${() => {
     const themeColors = useThemeContext();
 
     return `
@@ -10,9 +11,13 @@ export const MainContainer = styled.main`
       padding: 44px 64px 64px 20px;
       background: ${themeColors?.coreBackground};
       display: flex;
-      align-items: center;
       justify-content: center;
       gap: 64px;
+      align-items: stretch;
+
+      @media(max-width:${LAPTOP_MQ}px) {
+        gap: 40px;
+      }
     `;
   }}
 `;
@@ -27,4 +32,9 @@ export const MainContentWrapper = styled.div`
   grid-template-columns: minmax(700px, 1.5fr) minmax(500px, 1fr);
   grid-row-gap: 8px;
   grid-column-gap: 8px;
+
+  @media (max-width: ${LAPTOP_MQ}px) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+  }
 `;

@@ -1,4 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 interface TSideBarContainer {
@@ -13,11 +14,15 @@ export const SideBarContainer = styled.div<TSideBarContainer>`
       display: flex;
       padding: 24px 20px;
       width: ${expanded ? "260px" : "84px"};
-      height: 100vh;
+      // height: 100vh;
       flex-direction: column;
       justify-content: space-between;
       border-radius: 20px;
       background: ${themeColors?.textPrimary};
+
+      @media(max-width:${LAPTOP_MQ}px) {
+        padding: 24px 10px;
+      }
     `;
   }}
 `;

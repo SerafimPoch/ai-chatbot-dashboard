@@ -23,32 +23,30 @@ export default function SideBar() {
 
   return (
     <SideBarContainer expanded={expanded}>
-      <div>
-        <SideBarLogoWrapper>
-          <Image src={logoIcon} alt="sidebar-logo" width={48} height={48} />
-        </SideBarLogoWrapper>
-        <SideBarListWrapper>
-          {SIDE_BAR_LIST.map((e) => (
-            <Fragment key={e.id}>
-              <SidebarItem
-                info={{ ...e, expanded, chosenItemId }}
-                handleClick={handleChooseItemId}
-              />
-            </Fragment>
-          ))}
-        </SideBarListWrapper>
-        <SideBarLine />
-        <SidebarItem
-          info={{
-            id: 5,
-            icon: settingsIcon,
-            title: "Settings",
-            expanded,
-            chosenItemId,
-          }}
-          handleClick={handleChooseItemId}
-        />
-      </div>
+      <SideBarLogoWrapper>
+        <Image src={logoIcon} alt="sidebar-logo" width={48} height={48} />
+      </SideBarLogoWrapper>
+      <SideBarListWrapper>
+        {SIDE_BAR_LIST.map((e) => (
+          <Fragment key={e.id}>
+            <SidebarItem
+              info={{ ...e, expanded, chosenItemId }}
+              handleClick={handleChooseItemId}
+            />
+          </Fragment>
+        ))}
+      </SideBarListWrapper>
+      <SideBarLine />
+      <SidebarItem
+        info={{
+          id: 5,
+          icon: settingsIcon,
+          title: "Settings",
+          expanded,
+          chosenItemId,
+        }}
+        handleClick={handleChooseItemId}
+      />
       {expanded ? (
         <SidebarItem
           info={{ id: 6, icon: scrollBackIcon, title: "" }}

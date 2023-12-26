@@ -1,4 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const HeaderContainer = styled.div`
@@ -6,6 +7,10 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 68px;
+
+  @media (max-width: ${LAPTOP_MQ}px) {
+    margin-bottom: 116px;
+  }
 `;
 
 export const HeaderTitle = styled.h3`

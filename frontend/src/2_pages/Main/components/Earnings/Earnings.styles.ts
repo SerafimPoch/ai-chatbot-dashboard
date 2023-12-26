@@ -1,4 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const EarningsContainer = styled.div`
@@ -7,6 +8,10 @@ export const EarningsContainer = styled.div`
   padding: 24px 32px;
   grid-row: 3;
   grid-column: 1/3;
+
+  @media (max-width: ${LAPTOP_MQ}px) {
+    grid-row: 3;
+  }
 `;
 
 export const EarningsTitleWrapper = styled.div`

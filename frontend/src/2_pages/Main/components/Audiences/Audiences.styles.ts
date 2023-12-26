@@ -1,4 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 interface TAudienceChartLabel {
@@ -14,6 +15,11 @@ export const AudiencesContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: ${LAPTOP_MQ}px) {
+    grid-row: 2;
+    grid-column: 2/3;
+  }
 `;
 
 export const AudiencesTitle = styled.p`
