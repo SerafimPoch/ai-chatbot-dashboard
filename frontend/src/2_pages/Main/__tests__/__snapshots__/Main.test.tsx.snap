@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainContentWrapper renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: grid;
+  grid-template-columns: minmax(700px, 1.5fr) minmax(500px, 1fr);
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+}
+
+@media (max-width: 1550px) {
+  .emotion-0 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1240px) {
+  .emotion-0 {
+    grid-template-columns: 1fr;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
