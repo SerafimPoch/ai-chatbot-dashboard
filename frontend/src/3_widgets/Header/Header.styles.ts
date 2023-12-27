@@ -1,15 +1,20 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
-import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
+import { LAPTOP_MQ, MOBILE_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 24px;
   margin-bottom: 68px;
 
   @media (max-width: ${LAPTOP_MQ}px) {
     margin-bottom: 116px;
+  }
+
+  @media (max-width: ${MOBILE_MQ}px) {
+    margin-bottom: 50px;
   }
 `;
 

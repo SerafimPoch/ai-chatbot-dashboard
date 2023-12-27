@@ -16,6 +16,9 @@ import {
   EarningsChatBotContainer,
   EarningsChatBotName,
   EarningsChatBotModel,
+  EarningsProgressBarWrapper,
+  EarningsPercentIndicatorWrapper,
+  EarningsTimeSwitcherWrapper,
 } from "./Earnings.styles";
 import { EARNINGS_DATA } from "./constants";
 import chatBotIcon from "./assets/chatbot.svg?url";
@@ -26,7 +29,9 @@ export default function Earnings() {
     <EarningsContainer>
       <EarningsTitleWrapper>
         <EarningsTitle>Earnings</EarningsTitle>
-        <TimeSwitcher />
+        <EarningsTimeSwitcherWrapper>
+          <TimeSwitcher />
+        </EarningsTimeSwitcherWrapper>
       </EarningsTitleWrapper>
       <EarningsContent>
         <EarningsContentHeadlines>Chatbot</EarningsContentHeadlines>
@@ -59,9 +64,13 @@ export default function Earnings() {
               <EarningsContentBoldText>
                 ${lifetime.price}
               </EarningsContentBoldText>
-              <PercentIndicator percent={lifetime.percent} />
+              <EarningsPercentIndicatorWrapper>
+                <PercentIndicator percent={lifetime.percent} />
+              </EarningsPercentIndicatorWrapper>
             </EarningsContentLifeWrapper>
-            <ProgressBar storage={storage.used} color={storage.color} />
+            <EarningsProgressBarWrapper>
+              <ProgressBar storage={storage.used} color={storage.color} />
+            </EarningsProgressBarWrapper>
             <EarningsContentCapacity>
               <EarningsContentBoldText>{space.used}</EarningsContentBoldText>
               <EarningsContentLightText>

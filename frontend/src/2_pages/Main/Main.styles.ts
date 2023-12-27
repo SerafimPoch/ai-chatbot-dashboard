@@ -1,5 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
-import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
+import { LAPTOP_MQ, TABLET_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const MainContainer = styled.main`
@@ -8,7 +8,7 @@ export const MainContainer = styled.main`
 
     return `
       width: 100vw;
-      padding: 44px 64px 64px 20px;
+      padding: 20px 64px 20px 20px;
       background: ${themeColors?.coreBackground};
       display: flex;
       justify-content: center;
@@ -17,6 +17,11 @@ export const MainContainer = styled.main`
 
       @media(max-width:${LAPTOP_MQ}px) {
         gap: 40px;
+      }
+
+      @media(max-width:${TABLET_MQ}px) {
+        gap: 20px;
+        padding: 20px;
       }
     `;
   }}
@@ -35,6 +40,9 @@ export const MainContentWrapper = styled.div`
 
   @media (max-width: ${LAPTOP_MQ}px) {
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 0px;
+  }
+
+  @media (max-width: ${TABLET_MQ}px) {
+    grid-template-columns: 1fr;
   }
 `;

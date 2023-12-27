@@ -11,7 +11,7 @@ export const CUSTOM_MODAL_STYLES_DAY = {
     left: "89%",
     right: "auto",
     bottom: "auto",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(-80%, -50%)",
   },
 };
 
@@ -28,7 +28,7 @@ export const CUSTOM_MODAL_STYLES_NIGHT = {
     left: "89%",
     right: "auto",
     bottom: "auto",
-    transform: "translate(-50%, -50%)",
+    transform: "translate(-80%, -50%)",
   },
 };
 

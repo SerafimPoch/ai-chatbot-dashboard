@@ -1,5 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
-import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
+import { LAPTOP_MQ, MOBILE_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const StatisticContainer = styled.div`
@@ -25,11 +25,20 @@ export const StatisticBoyIconWrapper = styled.div`
   position: absolute;
   right: -80px;
   top: -150px;
+
+  @media (max-width: ${MOBILE_MQ}px) {
+    display: none;
+  }
 `;
 
 export const StatisticTitleWrapper = styled.div`
   padding: 36px;
   margin-bottom: 46px;
+
+  @media (max-width: ${MOBILE_MQ}px) {
+    padding: 10px;
+    margin-bottom: 0px;
+  }
 `;
 
 export const StatisticTitle = styled.p`

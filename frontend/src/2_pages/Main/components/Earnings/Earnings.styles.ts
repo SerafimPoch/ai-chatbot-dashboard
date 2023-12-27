@@ -1,5 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
-import { LAPTOP_MQ } from "@/src/6_shared/media-queries";
+import { LAPTOP_MQ, MOBILE_MQ, TABLET_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const EarningsContainer = styled.div`
@@ -11,6 +11,15 @@ export const EarningsContainer = styled.div`
 
   @media (max-width: ${LAPTOP_MQ}px) {
     grid-row: 3;
+  }
+
+  @media (max-width: ${TABLET_MQ}px) {
+    grid-row: 4;
+    grid-column: 1/3;
+  }
+
+  @media (max-width: ${MOBILE_MQ}px) {
+    padding: 24px;
   }
 `;
 
@@ -42,6 +51,14 @@ export const EarningsContent = styled.div`
   margin-bottom: 20px;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 20px;
+
+  @media (max-width: ${MOBILE_MQ}px) {
+    grid-template-columns: 1fr;
+
+    & > *:not(:first-child) {
+      display: none;
+    }
+  }
 `;
 
 export const EarningsItemWrapper = styled(EarningsContent)`
@@ -62,6 +79,8 @@ export const EarningsContentHeadlines = styled.p`
       font-weight: 500;
       line-height: 20px;
       color: ${themeColors?.textSecondary};
+
+ 
     `;
   }}
 `;
@@ -112,4 +131,22 @@ export const EarningsChatBotModel = styled.p`
   font-weight: 600;
   line-height: 20px;
   color: var(--text-secondary);
+`;
+
+export const EarningsProgressBarWrapper = styled.div`
+  @media (max-width: ${MOBILE_MQ}px) {
+    display: none;
+  }
+`;
+
+export const EarningsPercentIndicatorWrapper = styled.div`
+  @media (max-width: ${MOBILE_MQ}px) {
+    display: none;
+  }
+`;
+
+export const EarningsTimeSwitcherWrapper = styled.div`
+  @media (max-width: ${MOBILE_MQ}px) {
+    display: none;
+  }
 `;

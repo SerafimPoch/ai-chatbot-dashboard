@@ -1,4 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
+import { MOBILE_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const StatisticInfoContainer = styled.div`
@@ -14,6 +15,10 @@ export const StatisticInfoContainer = styled.div`
       border: 1px solid rgba(255, 255, 255, 0.7);
       background-color: ${themeColors?.coreBackground};
       backdrop-filter: blur(24px);
+
+      @media (max-width: ${MOBILE_MQ}px) {
+        display: none;
+      }
     `;
   }}
 `;
