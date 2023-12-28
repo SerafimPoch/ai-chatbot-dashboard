@@ -55,14 +55,14 @@ export const EarningsContent = styled.div`
   @media (max-width: ${MOBILE_MQ}px) {
     grid-template-columns: 1fr;
 
-    & > *:not(:first-child) {
+    & > *:not(:first-of-type) {
       display: none;
     }
   }
 `;
 
 export const EarningsItemWrapper = styled(EarningsContent)`
-  &:last-child {
+  &:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;

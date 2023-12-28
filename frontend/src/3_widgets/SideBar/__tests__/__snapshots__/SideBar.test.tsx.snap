@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar page components SideBarContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 20px;
+  width: 260px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: undefined;
+}
+
+@media (max-width:1550px) {
+  .emotion-0 {
+    padding: 24px 10px;
+  }
+}
+
+@media (max-width:1000px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`SideBar page components SideBarLine renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  height: 1px;
+  background: #929292;
+  margin: 8px 0;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`SideBar page components SideBarListWrapper renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`SideBar page components SideBarLogoWrapper renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  margin-bottom: 40px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

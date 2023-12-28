@@ -1,6 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MainContentWrapper renders correctly 1`] = `
+exports[`Main page components Container renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  max-width: 1440px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Main page components MainContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100vw;
+  padding: 20px 64px 20px 20px;
+  background: undefined;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  gap: 64px;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@media (max-width:1550px) {
+  .emotion-0 {
+    gap: 40px;
+  }
+}
+
+@media (max-width:1240px) {
+  .emotion-0 {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+<main
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Main page components MainContentWrapper renders correctly 1`] = `
 <DocumentFragment>
   .emotion-0 {
   display: grid;

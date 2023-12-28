@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header page components HeaderContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 68px;
+}
+
+@media (max-width: 1550px) {
+  .emotion-0 {
+    margin-bottom: 116px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .emotion-0 {
+    margin-bottom: 50px;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Header page components HeaderNavbar renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 32px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Header page components HeaderTitle renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 32px;
+  color: undefined;
+  margin-right: 40px;
+  font-family: var(--font-sf-pro-display);
+}
+
+<h3
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Header page components SwitcherWrapper renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

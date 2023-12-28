@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeSwitcher page components TimeSwitcherContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 16px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`TimeSwitcher page components TimeSwitcherItem renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 33px;
+  height: 28px;
+  padding: 4px 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: var(--font-sf-pro-rounded);
+  color: #fff;
+  background-color: #1D1D1D;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease;
+}
+
+.emotion-0:hover {
+  color: #fff;
+  background-color: #1d1d1d;
+}
+
+<button
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

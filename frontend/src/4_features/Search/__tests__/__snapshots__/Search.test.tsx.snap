@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search page components SearchContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Search page components SearchInput renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  background: transparent;
+  border: 1px solid #5d74f1;
+  outline: none;
+  border-radius: 6px;
+  padding: 0 5px;
+  color: undefined;
+}
+
+<input
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

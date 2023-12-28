@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar page components ProgressBarContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  height: 24px;
+  border-radius: 4px;
+  background: #f2f2f2;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ProgressBar page components ProgressBarLine renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: green;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 100%;
+  padding: 0 8px;
+}
+
+<div
+    class="emotion-0"
+    color="green"
+    width="100"
+  />
+</DocumentFragment>
+`;

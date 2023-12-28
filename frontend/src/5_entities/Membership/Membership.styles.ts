@@ -1,5 +1,5 @@
 import { useThemeContext } from "@/src/6_shared/contexts/ThemeContext";
-import { LAPTOP_MQ, MOBILE_MQ, TABLET_MQ } from "@/src/6_shared/media-queries";
+import { LAPTOP_MQ, MOBILE_MQ } from "@/src/6_shared/media-queries";
 import styled from "@emotion/styled";
 
 export const MembershipContainer = styled.div`

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatisticInfo page components StatisticInfoContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  padding: 24px 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: undefined;
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+
+@media (max-width: 1000px) {
+  .emotion-0 {
+    display: none;
+  }
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`StatisticInfo page components StatisticInfoNumbersWrapper renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`StatisticInfo page components StatisticInfoTitle renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: var(--font-sf-pro-rounded);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: undefined;
+  margin-bottom: 8px;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`StatisticInfo page components StatisticInfoValue renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  font-family: var(--font-sf-pro-display);
+  color: undefined;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.84px;
+}
+
+<p
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeToggle page components ThemeItem renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 50%;
+  height: 32px;
+  background: #f2f2f2;
+  color: var(--text-primary);
+  margin: 0 4px;
+  -webkit-transition: background-color 0.3s ease,color 0.3s ease;
+  transition: background-color 0.3s ease,color 0.3s ease;
+}
+
+<button
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
+
+exports[`ThemeToggle page components ThemeToggleContainer renders correctly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #f2f2f2;
+  width: 100%;
+  height: 40px;
+}
+
+<div
+    class="emotion-0"
+  />
+</DocumentFragment>
+`;
