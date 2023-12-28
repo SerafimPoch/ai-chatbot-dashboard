@@ -5,7 +5,7 @@ import { $theme } from "@/src/6_shared/store";
 import plusDay from "./ui/assets/plus-day.svg?url";
 import plusNight from "./ui/assets/plus-night.svg?url";
 import plusHover from "./ui/assets/plus-hover.svg?url";
-import { PLUS_ICON_AREA } from "./constants";
+import { PLUS_ICON_AREA } from "./AddScreen.constants";
 import { THEME_LIGHT_KEY } from "@/src/6_shared/constants";
 
 export default function AddScreen() {

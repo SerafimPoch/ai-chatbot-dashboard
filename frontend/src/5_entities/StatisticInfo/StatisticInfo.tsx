@@ -5,7 +5,7 @@ import {
   StatisticInfoTitle,
   StatisticInfoValue,
 } from "./StatisticInfo.styles";
-import { STATISTIC_DATA_VALUES } from "./constants";
+import { STATISTIC_DATA_VALUES } from "./StatisticInfo.constants";
 
 export default function StatisticInfo() {
   return (

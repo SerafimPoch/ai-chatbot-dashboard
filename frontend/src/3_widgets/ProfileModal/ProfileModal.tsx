@@ -10,7 +10,7 @@ import {
   CUSTOM_MODAL_STYLES_DAY,
   CUSTOM_MODAL_STYLES_NIGHT,
   PROFILE_MODAL_ICON_AREA,
-} from "./constants";
+} from "./ProfileModal.constants";
 import { ProfileIcon } from "@/src/6_shared/ui/icons/ProfileIcon";
 import { ThemeToggle } from "@/src/4_features/ThemeToggle";
 import { Logout } from "@/src/4_features/Logout";

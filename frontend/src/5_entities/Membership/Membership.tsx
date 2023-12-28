@@ -4,7 +4,7 @@ import {
   MembershipTitle,
   CustomBarComponent,
 } from "./Membership.styles";
-import { CHART_DATA } from "./constants";
+import { CHART_DATA } from "./Membership.constants";
 
 export default function Membership() {
   return (
