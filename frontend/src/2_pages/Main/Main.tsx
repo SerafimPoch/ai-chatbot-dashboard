@@ -3,11 +3,11 @@ import { useStore } from "@nanostores/react";
 import dynamic from "next/dynamic";
 import { Header } from "@/src/3_widgets/Header";
 import { ProfileModal } from "@/src/3_widgets/ProfileModal";
-import { Audiences } from "@/src/2_pages/Main/components/Audiences";
+import { Audiences } from "@/src/2_pages/Main/ui/Audiences";
 import { $isProfileModalOpen } from "@/src/6_shared/store";
 import { SideBar } from "@/src/3_widgets/SideBar";
-import { Statistic } from "./components/Statistic";
-import { Earnings } from "./components/Earnings";
+import { Statistic } from "./ui/Statistic";
+import { Earnings } from "./ui/Earnings";
 import { Container, MainContainer, MainContentWrapper } from "./Main.styles";
 
 const Membership = dynamic(() =>

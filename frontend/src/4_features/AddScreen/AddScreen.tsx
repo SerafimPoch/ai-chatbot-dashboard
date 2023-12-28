@@ -2,9 +2,9 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { useStore } from "@nanostores/react";
 import { $theme } from "@/src/6_shared/store";
-import plusDay from "./assets/plus-day.svg?url";
-import plusNight from "./assets/plus-night.svg?url";
-import plusHover from "./assets/plus-hover.svg?url";
+import plusDay from "./ui/assets/plus-day.svg?url";
+import plusNight from "./ui/assets/plus-night.svg?url";
+import plusHover from "./ui/assets/plus-hover.svg?url";
 import { PLUS_ICON_AREA } from "./constants";
 import { THEME_LIGHT_KEY } from "@/src/6_shared/constants";
 

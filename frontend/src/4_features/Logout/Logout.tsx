@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { LogoutContainer, LogoutText } from "./Logout.styles";
-import logoutIcon from "./assets/logout-day.svg?url";
+import logoutIcon from "./ui/assets/logout-day.svg?url";
 
 export default function Logout() {
   return (

@@ -15,9 +15,9 @@ import { ProfileIcon } from "@/src/6_shared/ui/icons/ProfileIcon";
 import { ThemeToggle } from "@/src/4_features/ThemeToggle";
 import { Logout } from "@/src/4_features/Logout";
 import { THEME_LIGHT_KEY } from "@/src/6_shared/constants";
-import userIcon from "./assets/user-day.svg?url";
-import chatBotIcon from "./assets/manageBot-day.svg?url";
-import settingsIcon from "./assets/settings-day.svg?url";
+import userIcon from "./ui/assets/user-day.svg";
+import chatBotIcon from "./ui/assets/manageBot-day.svg?url";
+import settingsIcon from "./ui/assets/settings-day.svg?url";
 import {
   ProfileTag,
   ProfileInfoWrapper,

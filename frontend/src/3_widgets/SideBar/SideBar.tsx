@@ -6,12 +6,12 @@ import {
   SideBarListWrapper,
   SideBarLine,
 } from "./SideBar.styles";
-import logoIcon from "./assets/sidebar-logo.svg?url";
-import settingsIcon from "./assets/settings.svg?url";
-import arrowIcon from "./assets/arrow.svg?url";
-import scrollBackIcon from "./assets/scroll-back.svg?url";
+import logoIcon from "./ui/assets/sidebar-logo.svg?url";
+import settingsIcon from "./ui/assets/settings.svg?url";
+import arrowIcon from "./ui/assets/arrow.svg?url";
+import scrollBackIcon from "./ui/assets/scroll-back.svg?url";
 import { SIDE_BAR_LIST } from "./constants";
-import { SidebarItem } from "./components/SidebarItem/SidebarItem";
+import { SidebarItem } from "./ui/components/SidebarItem/SidebarItem";
 
 export default function SideBar() {
   const [chosenItemId, setChosenItemId] = useState<any>(null);

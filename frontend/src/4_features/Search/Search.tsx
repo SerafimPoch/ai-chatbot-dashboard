@@ -4,8 +4,8 @@ import { useStore } from "@nanostores/react";
 import { $theme } from "@/src/6_shared/store";
 import { THEME_LIGHT_KEY } from "@/src/6_shared/constants";
 import { SearchContainer, SearchInput } from "./Search.styles";
-import searchDay from "./assets/search-day.svg?url";
-import searchNight from "./assets/search-night.svg?url";
+import searchDay from "./ui/assets/search-day.svg?url";
+import searchNight from "./ui/assets/search-night.svg?url";
 
 export default function Search() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
