@@ -1,6 +1,6 @@
-import mongoose, { Schema, Document } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-interface IAudience extends Document {
+export interface IAudience {
   id: number;
   percent: number;
   info: [

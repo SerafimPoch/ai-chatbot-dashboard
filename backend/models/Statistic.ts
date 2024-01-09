@@ -1,6 +1,6 @@
-import mongoose, { Schema, Document } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-interface IStatistic extends Document {
+export interface IStatistic {
   id: number;
   name: string;
   value: number;
