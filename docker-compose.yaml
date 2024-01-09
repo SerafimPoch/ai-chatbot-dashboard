@@ -7,11 +7,40 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    depends_on:
+      - backend
     ports:
       - "3000:3000"
     volumes:
       - ./frontend:/app
       - /app/node_modules
+
+  backend:
+    container_name: ai-chatbot-backend
+    restart: unless-stopped
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      - database
+    networks:
+      - ai-chatbot-network
+
+  database:
+    restart: unless-stopped
+    container_name: ai-chatbot-database
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - ai-chatbot-network
 
   nginx:
     image: nginx:stable-alpine
@@ -24,6 +53,9 @@ services:
       - ./nginx/nginx.conf.prod:/etc/nginx/nginx.conf
     networks:
       - ai-chatbot-network
+
+volumes:
+  mongodb_data:
 
 networks:
   ai-chatbot-network:
