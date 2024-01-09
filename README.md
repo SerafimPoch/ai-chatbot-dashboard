@@ -21,5 +21,5 @@ To get started with the "AI Chatbot Dashboard," ensure you have Docker installed
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
-3. Run the command `docker-compose up` to build and start the application.
+3. Run the command `docker-compose up --build` to build and start the application.
 4. Access the application through your web browser at the specified local address.
