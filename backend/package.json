@@ -14,5 +14,6 @@
     "@types/mongoose": "^5.11.97",
     "express": "^4.18.2",
     "mongoose": "^8.0.3"
-  }
+  },
+  "devDependencies": {}
 }

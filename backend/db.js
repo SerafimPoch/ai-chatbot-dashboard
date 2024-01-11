@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const initializeData = require("./initializeData");
 
 const mongoDBUrl = "mongodb://database:27017/mydatabase";
 
@@ -8,10 +9,11 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
+    await initializeData();
     console.log("MongoDB connected");
   } catch (err) {
     console.error("MongoDB connection error:", err);
-    process.exit(1); // Завершить приложение при ошибке подключения
+    process.exit(1);
   }
 };
 

@@ -10,6 +10,8 @@ COPY . .
 
 RUN yarn lint
 
+RUN yarn test
+
 RUN yarn build
 
 EXPOSE 3000
