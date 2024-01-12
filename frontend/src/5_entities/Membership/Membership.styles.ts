@@ -7,6 +7,8 @@ export const MembershipContainer = styled.div`
   border: 2px solid #f2f2f2;
   grid-column: 2;
   padding: 24px 16px 24px 32px;
+  position: relative;
+  min-height: 200px;
 
   @media (max-width: ${LAPTOP_MQ}px) {
     grid-row: 2;

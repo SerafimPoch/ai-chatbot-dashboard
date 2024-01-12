@@ -109,6 +109,7 @@ exports[`Audiences page components AudiencesContainer renders correctly 1`] = `
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  min-height: 200px;
 }
 
 @media (max-width: 1550px) {

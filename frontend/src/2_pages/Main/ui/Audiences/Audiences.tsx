@@ -17,35 +17,40 @@ import { useAudience } from "./Audiences.api";
 
 export default function Audiences() {
   const activeId = useStore($activeAudienceChart);
-  const { data } = useAudience();
+  const { data, isLoading } = useAudience();
 
   return (
     <AudiencesContainer>
-      <div>
-        <AudiencesTitle>Audiences</AudiencesTitle>
-        <AudienceChartContainer>
-          <Image
-            src={chartMockIcon}
-            alt="chart-mock"
-            width={138}
-            height={138}
-          />
-          {data
-            ?.filter((el) => el.id === activeId)
-            .map(({ id, percent, info }) => (
-              <div key={id}>
-                <AudienceChartPercent>{percent}%</AudienceChartPercent>
-                {info.map(({ name, color, percent }) => (
-                  <AudienceChartLabelWrapper key={name}>
-                    <AudienceChartLabel color={color} />
-                    <AudienceChartLabelText>{name}</AudienceChartLabelText>
-                    <PercentIndicator percent={percent} />
-                  </AudienceChartLabelWrapper>
-                ))}
-              </div>
-            ))}
-        </AudienceChartContainer>
-      </div>
+      {isLoading ? (
+        <AudiencesTitle>Loading...</AudiencesTitle>
+      ) : (
+        <div>
+          <AudiencesTitle>Audiences</AudiencesTitle>
+          <AudienceChartContainer>
+            <Image
+              src={chartMockIcon}
+              alt="chart-mock"
+              width={138}
+              height={138}
+            />
+            {data
+              ?.filter((el) => el.id === activeId)
+              .map(({ id, percent, info }) => (
+                <div key={id}>
+                  <AudienceChartPercent>{percent}%</AudienceChartPercent>
+                  {info.map(({ name, color, percent }) => (
+                    <AudienceChartLabelWrapper key={name}>
+                      <AudienceChartLabel color={color} />
+                      <AudienceChartLabelText>{name}</AudienceChartLabelText>
+                      <PercentIndicator percent={percent} />
+                    </AudienceChartLabelWrapper>
+                  ))}
+                </div>
+              ))}
+          </AudienceChartContainer>
+        </div>
+      )}
+
       <ArrowToggler />
     </AudiencesContainer>
   );
