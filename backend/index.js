@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const connectDB = require("./db");
 const Statistic = require("./models/Statistic");
 const Audience = require("./models/Audience");
@@ -10,6 +11,7 @@ connectDB();
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/statistic", async (req, res) => {
   try {

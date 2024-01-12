@@ -5,9 +5,13 @@ const mongoDBUrl = "mongodb://database:27017/mydatabase";
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(mongoDBUrl, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+    await mongoose.connect(mongoDBUrl);
+    mongoose.set("toJSON", {
+      virtuals: true,
+      transform: (doc, ret) => {
+        delete ret._id;
+        delete ret.__v;
+      },
     });
     await initializeData();
     console.log("MongoDB connected");
