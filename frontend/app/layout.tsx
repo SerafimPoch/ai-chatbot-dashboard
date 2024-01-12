@@ -1,6 +1,6 @@
 "use client";
 import localFont from "next/font/local";
-import { useStore } from "@nanostores/react";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { RootStyleRegistry } from "@/src/2_pages/Main";
 import "./globals.css";
 
@@ -34,19 +34,30 @@ const sfProRounded = localFont({
   variable: "--font-sf-pro-rounded",
 });
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      refetchOnMount: false,
+      refetchOnReconnect: false,
+      retry: false,
+    },
+  },
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const theme = useStore($theme);
-
   return (
     <html lang="en">
       <body className={`${sfProRounded.className} ${sfProDisplay.className}`}>
-        <RootStyleRegistry>
-          <ThemeProvider>{children}</ThemeProvider>
-        </RootStyleRegistry>
+        <QueryClientProvider client={queryClient}>
+          <RootStyleRegistry>
+            <ThemeProvider>{children}</ThemeProvider>
+          </RootStyleRegistry>
+        </QueryClientProvider>
       </body>
     </html>
   );

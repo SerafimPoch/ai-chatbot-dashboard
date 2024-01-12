@@ -20,11 +20,12 @@ import {
   EarningsPercentIndicatorWrapper,
   EarningsTimeSwitcherWrapper,
 } from "./Earnings.styles";
-import { EARNINGS_DATA } from "./constants";
 import chatBotIcon from "./assets/chatbot.svg?url";
 import chatBotRedIcon from "./assets/chatbot-red.svg?url";
+import { useEarnings } from "./Earnings.api";
 
 export default function Earnings() {
+  const { data } = useEarnings();
   return (
     <EarningsContainer>
       <EarningsTitleWrapper>
@@ -40,46 +41,40 @@ export default function Earnings() {
         <EarningsContentHeadlines>Available storage</EarningsContentHeadlines>
         <div />
       </EarningsContent>
-      {EARNINGS_DATA.map(
-        ({ id, version, pledge, lifetime, storage, space }) => (
-          <EarningsItemWrapper key={id}>
-            <EarningsChatBotContainer>
-              {version === 4 ? (
-                <Image src={chatBotIcon} alt="chatbot" width={64} height={64} />
-              ) : (
-                <Image
-                  src={chatBotRedIcon}
-                  alt="chatbot-red"
-                  width={64}
-                  height={64}
-                />
-              )}
-              <div>
-                <EarningsChatBotName>EchoBot</EarningsChatBotName>
-                <EarningsChatBotModel>{`GPT${version}-based`}</EarningsChatBotModel>
-              </div>
-            </EarningsChatBotContainer>
-            <EarningsContentBoldText>${pledge}</EarningsContentBoldText>
-            <EarningsContentLifeWrapper>
-              <EarningsContentBoldText>
-                ${lifetime.price}
-              </EarningsContentBoldText>
-              <EarningsPercentIndicatorWrapper>
-                <PercentIndicator percent={lifetime.percent} />
-              </EarningsPercentIndicatorWrapper>
-            </EarningsContentLifeWrapper>
-            <EarningsProgressBarWrapper>
-              <ProgressBar storage={storage.used} color={storage.color} />
-            </EarningsProgressBarWrapper>
-            <EarningsContentCapacity>
-              <EarningsContentBoldText>{space.used}</EarningsContentBoldText>
-              <EarningsContentLightText>
-                /{space.all}Gb
-              </EarningsContentLightText>
-            </EarningsContentCapacity>
-          </EarningsItemWrapper>
-        )
-      )}
+      {data?.map(({ id, version, pledge, lifetime, storage, space }) => (
+        <EarningsItemWrapper key={id}>
+          <EarningsChatBotContainer>
+            {version === 4 ? (
+              <Image src={chatBotIcon} alt="chatbot" width={64} height={64} />
+            ) : (
+              <Image
+                src={chatBotRedIcon}
+                alt="chatbot-red"
+                width={64}
+                height={64}
+              />
+            )}
+            <div>
+              <EarningsChatBotName>EchoBot</EarningsChatBotName>
+              <EarningsChatBotModel>{`GPT${version}-based`}</EarningsChatBotModel>
+            </div>
+          </EarningsChatBotContainer>
+          <EarningsContentBoldText>${pledge}</EarningsContentBoldText>
+          <EarningsContentLifeWrapper>
+            <EarningsContentBoldText>${lifetime.price}</EarningsContentBoldText>
+            <EarningsPercentIndicatorWrapper>
+              <PercentIndicator percent={lifetime.percent} />
+            </EarningsPercentIndicatorWrapper>
+          </EarningsContentLifeWrapper>
+          <EarningsProgressBarWrapper>
+            <ProgressBar storage={storage.used} color={storage.color} />
+          </EarningsProgressBarWrapper>
+          <EarningsContentCapacity>
+            <EarningsContentBoldText>{space.used}</EarningsContentBoldText>
+            <EarningsContentLightText>/{space.all}Gb</EarningsContentLightText>
+          </EarningsContentCapacity>
+        </EarningsItemWrapper>
+      ))}
     </EarningsContainer>
   );
 }

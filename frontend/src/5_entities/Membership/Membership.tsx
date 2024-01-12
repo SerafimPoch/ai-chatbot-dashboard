@@ -4,14 +4,16 @@ import {
   MembershipTitle,
   CustomBarComponent,
 } from "./Membership.styles";
-import { CHART_DATA } from "./Membership.constants";
+import { useChart } from "./Membership.api";
 
 export default function Membership() {
+  const { data } = useChart();
+
   return (
     <MembershipContainer>
       <MembershipTitle>Membership</MembershipTitle>
       <ResponsiveContainer width="100%" height={120}>
-        <BarChart data={CHART_DATA} margin={{ left: -2 }}>
+        <BarChart data={data} margin={{ left: -2 }}>
           <Bar
             dataKey="uv"
             shape={<CustomBarComponent fill="#FFCC6F" />}

@@ -12,11 +12,12 @@ import {
 import { ArrowToggler } from "@/src/4_features/ArrowToggler";
 import { $activeAudienceChart } from "@/src/6_shared/store";
 import { PercentIndicator } from "@/src/6_shared/ui/components/PercentIndicator";
-import { AUDIENCE_DATA } from "./constants";
 import chartMockIcon from "./assets/circle.svg?url";
+import { useAudience } from "./Audiences.api";
 
 export default function Audiences() {
   const activeId = useStore($activeAudienceChart);
+  const { data } = useAudience();
 
   return (
     <AudiencesContainer>
@@ -29,8 +30,9 @@ export default function Audiences() {
             width={138}
             height={138}
           />
-          {AUDIENCE_DATA.filter((el) => el.id === activeId).map(
-            ({ id, percent, info }) => (
+          {data
+            ?.filter((el) => el.id === activeId)
+            .map(({ id, percent, info }) => (
               <div key={id}>
                 <AudienceChartPercent>{percent}%</AudienceChartPercent>
                 {info.map(({ name, color, percent }) => (
@@ -41,8 +43,7 @@ export default function Audiences() {
                   </AudienceChartLabelWrapper>
                 ))}
               </div>
-            )
-          )}
+            ))}
         </AudienceChartContainer>
       </div>
       <ArrowToggler />

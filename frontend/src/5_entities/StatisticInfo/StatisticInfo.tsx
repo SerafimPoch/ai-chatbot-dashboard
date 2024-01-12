@@ -5,12 +5,14 @@ import {
   StatisticInfoTitle,
   StatisticInfoValue,
 } from "./StatisticInfo.styles";
-import { STATISTIC_DATA_VALUES } from "./StatisticInfo.constants";
+import { useStatistics } from "./StatisticInfo.api";
 
 export default function StatisticInfo() {
+  const { data } = useStatistics();
+
   return (
     <StatisticInfoContainer>
-      {STATISTIC_DATA_VALUES.map(({ id, name, value, percent }) => (
+      {data?.map(({ id, name, value, percent }) => (
         <div key={id}>
           <StatisticInfoTitle>{name}</StatisticInfoTitle>
           <StatisticInfoNumbersWrapper>
