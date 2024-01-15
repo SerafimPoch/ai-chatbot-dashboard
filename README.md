@@ -4,6 +4,8 @@
 
 The "AI Chatbot Dashboard" is a state-of-the-art web application designed to streamline the management and interaction with AI chatbots. This application combines modern web development practices and technologies to create a robust and user-friendly platform.
 
+<img width="1792" alt="Снимок экрана 2024-01-15 в 13 23 49" src="https://github.com/SerafimPoch/ai-chatbot-dashboard/assets/20750239/b927e5bf-2694-4fec-abbf-c6b681d4d001">
+
 ## Key Technologies
 
 - **Next.js**: Utilizes the capabilities of this React framework for server-side rendering, static website generation, and efficient build optimizations.
