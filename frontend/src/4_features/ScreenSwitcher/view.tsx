@@ -1,6 +1,6 @@
 import { useStore } from "@nanostores/react";
 import { $activeScreen, changeActiveScreen } from "@/src/6_shared/store";
-import { ScreenSwitcherContainer } from "./ScreenSwitcher.styles";
+import { ScreenSwitcherContainer } from "./styles";
 import { ArrowIcon } from "@/src/6_shared/ui/icons/ArrowIcon";
 
 export default function ScreenSwitcher() {

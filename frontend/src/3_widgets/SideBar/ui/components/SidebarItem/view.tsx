@@ -1,6 +1,6 @@
 import { memo } from "react";
 import Image from "next/image";
-import { SidebarItemContainer, SidebarItemTitle } from "./SidebarItem.styles";
+import { SidebarItemContainer, SidebarItemTitle } from "./styles";
 
 interface SidebarItemProps {
   info: {
@@ -13,7 +13,7 @@ interface SidebarItemProps {
   handleClick: (id: number) => void;
 }
 
-export const SidebarItem: React.FC<SidebarItemProps> = memo(
+const SidebarItem: React.FC<SidebarItemProps> = memo(
   ({ info, handleClick }) => {
     const { id, icon, title, expanded, chosenItemId } = info;
     const isActiveId = chosenItemId === id;
@@ -31,5 +31,7 @@ export const SidebarItem: React.FC<SidebarItemProps> = memo(
     );
   }
 );
+
+export default SidebarItem;
 
 SidebarItem.displayName = "SidebarItem";

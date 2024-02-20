@@ -3,8 +3,8 @@ import {
   MembershipContainer,
   MembershipTitle,
   CustomBarComponent,
-} from "./Membership.styles";
-import { useChart } from "./Membership.api";
+} from "./styles";
+import { useChart } from "./api";
 
 export default function Membership() {
   const { data, isLoading } = useChart();

@@ -17,7 +17,7 @@
     "@nanostores/react": "^0.7.1",
     "cors": "^2.8.5",
     "nanostores": "^0.9.5",
-    "next": "^14.0.3",
+    "next": "^14.1.0",
     "prop-types": "^15.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

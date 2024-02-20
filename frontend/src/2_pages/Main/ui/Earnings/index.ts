@@ -1,1 +1,1 @@
-export { default as Earnings } from "./Earnings";
+export { default as Earnings } from "./view";

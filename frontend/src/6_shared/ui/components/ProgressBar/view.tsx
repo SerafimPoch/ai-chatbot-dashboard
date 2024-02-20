@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { ProgressBarContainer, ProgressBarLine } from "./ProgressBar.styles";
+import { ProgressBarContainer, ProgressBarLine } from "./styles";
 
 interface TProgressBar {
   storage: number;

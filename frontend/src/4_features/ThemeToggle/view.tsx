@@ -1,6 +1,6 @@
 import { useStore } from "@nanostores/react";
 import { $theme, onChangeTheme } from "@/src/6_shared/store";
-import { ThemeItem, ThemeToggleContainer } from "./ThemeToggle.styles";
+import { ThemeItem, ThemeToggleContainer } from "./styles";
 import { THEME_LIGHT_KEY, THEME_DARK_KEY } from "@/src/6_shared/constants";
 
 export default function ThemeToggle() {

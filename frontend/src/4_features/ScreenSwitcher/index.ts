@@ -1,1 +1,1 @@
-export { default as ScreenSwitcher } from "./ScreenSwitcher";
+export { default as ScreenSwitcher } from "./view";

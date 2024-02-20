@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { ThemeToggleContainer, ThemeItem } from "../ThemeToggle.styles";
+import { ThemeToggleContainer, ThemeItem } from "../styles";
 
 describe("ThemeToggle page components", () => {
   it("ThemeToggleContainer renders correctly", () => {

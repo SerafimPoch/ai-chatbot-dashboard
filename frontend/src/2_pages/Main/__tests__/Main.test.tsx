@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { MainContainer, Container, MainContentWrapper } from "../Main.styles";
+import { MainContainer, Container, MainContentWrapper } from "../styles";
 
 describe("Main page components", () => {
   it("MainContainer renders correctly", () => {

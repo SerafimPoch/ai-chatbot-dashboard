@@ -8,7 +8,7 @@ import {
   AudienceChartLabelWrapper,
   AudienceChartLabel,
   AudienceChartLabelText,
-} from "../Audiences.styles";
+} from "../styles";
 
 describe("Audiences page components", () => {
   it("AudiencesContainer renders correctly", () => {

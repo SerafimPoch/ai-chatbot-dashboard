@@ -6,7 +6,7 @@ import {
   StatisticTitle,
   StatisticTitleWrapper,
   ViewEarningBtn,
-} from "./Statistic.styles";
+} from "./styles";
 import boyIcon from "./assets/boy.svg?url";
 import { ArrowIcon } from "@/src/6_shared/ui/icons/ArrowIcon";
 

@@ -4,7 +4,7 @@ import {
   PercentIndicatorContainer,
   PercentIndicatorTriangle,
   PercentIndicatorValue,
-} from "../PercentIndicator.styles";
+} from "../styles";
 
 describe("PercentIndicator page components", () => {
   it("PercentIndicatorContainer renders correctly", () => {

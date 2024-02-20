@@ -1,9 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import {
-  TimeSwitcherContainer,
-  TimeSwitcherItem,
-} from "../TimeSwitcher.styles";
+import { TimeSwitcherContainer, TimeSwitcherItem } from "../styles";
 
 describe("TimeSwitcher page components", () => {
   it("TimeSwitcherContainer renders correctly", () => {

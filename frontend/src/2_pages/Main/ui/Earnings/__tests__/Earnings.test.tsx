@@ -17,7 +17,7 @@ import {
   EarningsProgressBarWrapper,
   EarningsPercentIndicatorWrapper,
   EarningsTimeSwitcherWrapper,
-} from "../Earnings.styles";
+} from "../styles";
 
 describe("Earnings page components", () => {
   it("EarningsContainer renders correctly", () => {

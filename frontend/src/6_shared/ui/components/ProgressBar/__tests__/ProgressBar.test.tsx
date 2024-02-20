@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { ProgressBarContainer, ProgressBarLine } from "../ProgressBar.styles";
+import { ProgressBarContainer, ProgressBarLine } from "../styles";
 
 describe("ProgressBar page components", () => {
   it("ProgressBarContainer renders correctly", () => {

@@ -5,7 +5,7 @@ import {
   HeaderTitle,
   SwitcherWrapper,
   HeaderNavbar,
-} from "../Header.styles";
+} from "../styles";
 
 describe("Header page components", () => {
   it("HeaderContainer renders correctly", () => {

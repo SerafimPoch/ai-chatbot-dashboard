@@ -9,7 +9,7 @@ import {
   HeaderTitle,
   SwitcherWrapper,
   HeaderNavbar,
-} from "./Header.styles";
+} from "./styles";
 
 export default function Header() {
   return (

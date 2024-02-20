@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { LogoutContainer, LogoutText } from "../Logout.styles";
+import { LogoutContainer, LogoutText } from "../styles";
 
 describe("Logout page components", () => {
   it("LogoutContainer renders correctly", () => {

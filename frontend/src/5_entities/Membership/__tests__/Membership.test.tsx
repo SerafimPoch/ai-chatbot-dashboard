@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { MembershipContainer, MembershipTitle } from "../Membership.styles";
+import { MembershipContainer, MembershipTitle } from "../styles";
 
 describe("Membership page components", () => {
   it("MembershipContainer renders correctly", () => {

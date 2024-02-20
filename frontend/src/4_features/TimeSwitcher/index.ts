@@ -1,1 +1,1 @@
-export { default as TimeSwitcher } from "./TimeSwitcher";
+export { default as TimeSwitcher } from "./view";

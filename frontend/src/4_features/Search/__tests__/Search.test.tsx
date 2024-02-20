@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { SearchContainer, SearchInput } from "../Search.styles";
+import { SearchContainer, SearchInput } from "../styles";
 
 describe("Search page components", () => {
   it("SearchContainer renders correctly", () => {

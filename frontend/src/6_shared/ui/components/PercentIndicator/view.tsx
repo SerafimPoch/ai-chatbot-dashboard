@@ -3,7 +3,7 @@ import {
   PercentIndicatorContainer,
   PercentIndicatorTriangle,
   PercentIndicatorValue,
-} from "./PercentIndicator.styles";
+} from "./styles";
 
 interface TPercentIndicator {
   percent: number;

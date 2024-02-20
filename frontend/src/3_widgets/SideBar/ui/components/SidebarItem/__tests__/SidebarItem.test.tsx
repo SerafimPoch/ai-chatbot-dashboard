@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { SidebarItemContainer, SidebarItemTitle } from "../SidebarItem.styles";
+import { SidebarItemContainer, SidebarItemTitle } from "../styles";
 
 describe("SidebarItem page components", () => {
   it("SidebarItemContainer renders correctly", () => {

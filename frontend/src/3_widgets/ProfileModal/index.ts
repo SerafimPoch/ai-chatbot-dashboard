@@ -1,1 +1,1 @@
-export { default as ProfileModal } from "./ProfileModal";
+export { default as ProfileModal } from "./view";

@@ -9,7 +9,7 @@ import {
   ProfileLogoutWrapper,
   ProfileItemWrapper,
   ProfileItemText,
-} from "../ProfileModal.styles";
+} from "../styles";
 
 describe("ProfileModal page components", () => {
   it("ProfileInfoWrapper renders correctly", () => {

@@ -8,7 +8,7 @@ import { $isProfileModalOpen } from "@/src/6_shared/store";
 import { SideBar } from "@/src/3_widgets/SideBar";
 import { Statistic } from "./ui/Statistic";
 import { Earnings } from "./ui/Earnings";
-import { Container, MainContainer, MainContentWrapper } from "./Main.styles";
+import { Container, MainContainer, MainContentWrapper } from "./styles";
 
 const Membership = dynamic(() =>
   import("@/src/5_entities/Membership").then((mod) => mod.Membership)

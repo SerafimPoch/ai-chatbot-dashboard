@@ -6,7 +6,7 @@ import {
   StatisticTitleWrapper,
   StatisticTitle,
   ViewEarningBtn,
-} from "../Statistic.styles";
+} from "../styles";
 
 describe("Statistic page components", () => {
   it("StatisticContainer renders correctly", () => {

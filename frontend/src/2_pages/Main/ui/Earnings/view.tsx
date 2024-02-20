@@ -2,7 +2,7 @@ import Image from "next/image";
 import { TimeSwitcher } from "@/src/4_features/TimeSwitcher";
 import { PercentIndicator } from "@/src/6_shared/ui/components/PercentIndicator";
 import { ProgressBar } from "@/src/6_shared/ui/components/ProgressBar";
-import { Loader } from "@/src/6_shared/ui/components/Loader/Loader";
+import { Loader } from "@/src/6_shared/ui/components/Loader/view";
 import {
   EarningsContainer,
   EarningsTitleWrapper,
@@ -20,10 +20,10 @@ import {
   EarningsProgressBarWrapper,
   EarningsPercentIndicatorWrapper,
   EarningsTimeSwitcherWrapper,
-} from "./Earnings.styles";
+} from "./styles";
 import chatBotIcon from "./assets/chatbot.svg?url";
 import chatBotRedIcon from "./assets/chatbot-red.svg?url";
-import { useEarnings } from "./Earnings.api";
+import { useEarnings } from "./api";
 
 export default function Earnings() {
   const { data, isLoading } = useEarnings();

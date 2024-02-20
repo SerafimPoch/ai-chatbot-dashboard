@@ -5,13 +5,13 @@ import {
   SideBarLogoWrapper,
   SideBarListWrapper,
   SideBarLine,
-} from "./SideBar.styles";
+} from "./styles";
 import logoIcon from "./ui/assets/sidebar-logo.svg?url";
 import settingsIcon from "./ui/assets/settings.svg?url";
 import arrowIcon from "./ui/assets/arrow.svg?url";
 import scrollBackIcon from "./ui/assets/scroll-back.svg?url";
-import { SIDE_BAR_LIST } from "./SideBar.constants";
-import { SidebarItem } from "./ui/components/SidebarItem/SidebarItem";
+import { SIDE_BAR_LIST } from "./constants";
+import { SidebarItem } from "./ui/components/SidebarItem";
 
 export default function SideBar() {
   const [chosenItemId, setChosenItemId] = useState<any>(null);

@@ -1,1 +1,1 @@
-export { default as ArrowToggler } from "./ArrowToggler";
+export { default as ArrowToggler } from "./view";

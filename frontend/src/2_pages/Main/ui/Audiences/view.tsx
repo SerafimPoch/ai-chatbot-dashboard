@@ -8,12 +8,12 @@ import {
   AudienceChartPercent,
   AudiencesContainer,
   AudiencesTitle,
-} from "./Audiences.styles";
+} from "./styles";
 import { ArrowToggler } from "@/src/4_features/ArrowToggler";
 import { $activeAudienceChart } from "@/src/6_shared/store";
 import { PercentIndicator } from "@/src/6_shared/ui/components/PercentIndicator";
 import chartMockIcon from "./assets/circle.svg?url";
-import { useAudience } from "./Audiences.api";
+import { useAudience } from "./api";
 
 export default function Audiences() {
   const activeId = useStore($activeAudienceChart);

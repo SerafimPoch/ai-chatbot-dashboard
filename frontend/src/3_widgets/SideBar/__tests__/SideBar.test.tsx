@@ -5,7 +5,7 @@ import {
   SideBarLogoWrapper,
   SideBarListWrapper,
   SideBarLine,
-} from "../SideBar.styles";
+} from "../styles";
 
 describe("SideBar page components", () => {
   it("SideBarContainer renders correctly", () => {

@@ -1,1 +1,1 @@
-export { default as PercentIndicator } from "./PercentIndicator";
+export { default as PercentIndicator } from "./view";
